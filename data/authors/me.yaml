@@ -1,0 +1,141 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: "Dr. Johel Padilla-Villanueva, DrPH"
+  given: Johel
+  family: "Padilla-Villanueva"
+  alternate: ''
+  pronunciation: ''
+  pronouns: he/him
+postnominals:
+  - DrPH
+status:
+  icon: "🔬"
+role: "DrPH | Auxiliary Professor (UPR Carolina) & Adjunct Professor (UPR Medical Sciences Campus) | Independent Researcher"
+bio: |
+  Dr. Johel Padilla-Villanueva, DrPH is an independent researcher and university professor specializing in environmental health, vector-borne disease dynamics, and the development of novel theoretical frameworks in complex systems. His DrPH dissertation (UPR, 2022) examined the spatiotemporal dynamics of Aedes aegypti populations in the Caño Martín Peña area of San Juan, Puerto Rico.
+
+  His current research centers on Systemic Tau (τ_s) and the Discrete Extramental Clock Law (RECD / Ley del Reloj Extramental Discreto), integrating fractal analysis (D ≈ 1.98), ordinal renormalization, ontological emergence, Bayesian accumulation, and applications to early-warning systems for dengue and other complex public health phenomena. He also explores connections with philosophy of physics and synthesis across chaos theory, information theory, and non-Laplacian probability.
+
+  Recent publications (2026) are available on Zenodo. Open to interdisciplinary collaboration.
+
+affiliations:
+  - name: "Auxiliary Professor, University of Puerto Rico at Carolina (DECEP / LEAP Academy)"
+    url: "https://www.upr.edu/"
+  - name: "Adjunct Professor, Graduate School of Public Health, University of Puerto Rico Medical Sciences Campus"
+    url: "https://www.upr.edu/"
+  - name: "Independent Researcher — Systemic Tau (τ_s) & Discrete Extramental Clock (RECD)"
+    url: ""
+
+links:
+  - icon: at-symbol
+    url: mailto:joel.padilla2@upr.edu
+    label: joel.padilla2@upr.edu
+  - icon: at-symbol
+    url: mailto:johelpadilla@gmail.com
+    label: johelpadilla@gmail.com
+  - icon: brands/x
+    url: https://x.com/mrjohelpadilla
+    label: "@mrjohelpadilla"
+  - icon: academicons/orcid
+    url: https://orcid.org/0000-0002-5797-6931
+    label: ORCID
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?user=
+    label: Google Scholar (add profile)
+
+interests:
+  - Systemic Tau (τ_s) and Discrete Extramental Clock Law (RECD)
+  - Fractal Dimension, Ordinal Methods & Renormalization in Chaotic Systems
+  - Complex Systems, Ontological Emergence & Philosophy of Physics
+  - Vector-borne Diseases & Early Warning Systems (Dengue, Aedes aegypti)
+  - Environmental Health, Epidemiology & Public Health Data Analysis
+  - Academic Publications & Open Science (Zenodo)
+
+education:
+  - degree: "DrPH (Doctor of Public Health) — Environmental Health"
+    institution: "University of Puerto Rico, Medical Sciences Campus"
+    start: 2016-08-01
+    end: 2022-11-01
+    summary: |
+      Dissertation: Dinámica espaciotemporal de la población del mosquito Aedes aegypti (L.) en la zona del Caño Martín Peña en San Juan de Puerto Rico durante los años epidemiológicos 2018–2019; Repercusiones a la salud para los residentes de las comunidades aledañas. (ProQuest 2728033618)
+  - degree: "M.Sc. Environmental Health"
+    institution: "University of Puerto Rico, Medical Sciences Campus"
+    start: 2012-08-01
+    end: 2014-05-01
+  - degree: "B.S. General Biology"
+    institution: "University of Puerto Rico, Bayamón"
+    start: 1997-08-01
+    end: 2002-05-01
+  - degree: "B.A. + M.A. (Licentiate in Ecclesiastical Studies)"
+    institution: "Universidad de Navarra, Pamplona, Spain"
+    start: 2004-09-01
+    end: 2009-06-01
+
+experience:
+  - role: "Auxiliary Professor (Biology)"
+    org: "University of Puerto Rico at Carolina (DECEP + LEAP Academy)"
+    start: 2024-08-01
+    summary: |
+      Instructor for CIBI-3001 Introduction to Biology (undergraduate, dual-enrollment high school students). Focus on critical thinking, scientific inquiry, and hands-on labs.
+  - role: "Adjunct Professor (Environmental Health)"
+    org: "Graduate School of Public Health, University of Puerto Rico Medical Sciences Campus"
+    start: 2023-08-01
+    summary: |
+      Instructor for SAAM-6528 Introduction to Environmental Health (graduate level). Integrates theory, case studies, and current research in public health.
+  - role: "Project Manager / Research Assistant / Preceptor"
+    org: "University of Puerto Rico Medical Sciences Campus"
+    start: 2015-03-01
+    end: 2020-06-01
+    summary: |
+      Led database research projects, trained team members, supported graduate students in historic demography and public health studies.
+  - role: "GIS Specialist"
+    org: "Resource Center for Science and Engineering (EPA-UPR-RCSE)"
+    start: 2017-01-01
+    end: 2018-11-01
+    summary: |
+      Created and refined rural community maps using ArcGIS/ArcScene for federal grant projects on water supply (Aguas Buenas, PR).
+  - role: "Doctoral Student Intern / Vector Research"
+    org: "Puerto Rico Science, Technology & Research Trust / CDC Dengue Branch"
+    start: 2018-09-01
+    end: 2019-12-01
+    summary: |
+      Conducted studies on Aedes sp. mosquitoes using nonlinear spatio-temporal techniques. CDC San Juan Dengue Branch & PRVCU internship.
+
+skills:
+  - name: Research & Data Analysis
+    items:
+      - label: R Programming & Statistical Analysis
+        level: 4
+      - label: ArcGIS / Spatial Analysis & Mapping
+        level: 5
+      - label: Data Management & Databases
+        level: 4
+      - label: Nonlinear / Spatiotemporal Analysis
+        level: 4
+  - name: Teaching & Communication
+    items:
+      - label: University Teaching (Undergrad & Graduate)
+        level: 5
+      - label: Academic Writing & Publications
+        level: 4
+      - label: Conference Presentations (APHA, AAAS, local)
+        level: 4
+      - label: Public Health Training & Mentorship
+        level: 5
+
+languages:
+  - name: Spanish
+    level: 5
+    label: Native
+  - name: English
+    level: 4
+    label: Professional proficiency
+
+awards:
+  - title: "APHA Abstract Reviewer (2020 Annual Meeting)"
+    awarder: "American Public Health Association"
+    date: "2020-03-01"
+    summary: "Served as abstract reviewer for APHA's 2020 Annual Meeting and Expo (Virtual)."
+    icon: hero/academic-cap
