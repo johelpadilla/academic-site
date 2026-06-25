@@ -42,8 +42,8 @@ links:
     url: https://orcid.org/0000-0002-5797-6931
     label: ORCID
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=
-    label: Google Scholar (add profile)
+    url: https://scholar.google.com/citations?user=  # TODO: add your Google Scholar user ID
+    label: Google Scholar
 
 interests:
   - Systemic Tau (τ_s) and Discrete Extramental Clock Law (RECD)
