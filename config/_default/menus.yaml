@@ -3,18 +3,5 @@
   #     desired widget in your `content/home/` folder.
   #   The weight parameter defines the order that the links will appear in.
 
-main:
-  - name: Bio
-    url: /
-    weight: 10
-  - name: Publicaciones
-    url: /#papers
-    weight: 11
-  - name: Experiencia
-    url: experience/
-    weight: 20
-  # Add more when you have real content:
-  # - name: Charlas
-  #   url: /#talks
-  # - name: Blog
-  #   url: /blog/
+# Menus are defined per-language in languages.yaml for multilingual support.
+# Spanish (es) is the default/main language.

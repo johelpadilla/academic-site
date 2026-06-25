@@ -14,7 +14,7 @@ baseURL: 'https://johelpadilla.github.io/academic-site/'
 ## LANGUAGE
 ############################
 
-defaultContentLanguage: en
+defaultContentLanguage: es
 hasCJKLanguage: false
 defaultContentLanguageInSubdir: false
 removePathAccents: true

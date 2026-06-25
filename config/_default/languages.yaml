@@ -2,21 +2,42 @@
 #   Create a section for each of your site's languages.
 #   Documentation: https://docs.hugoblox.com/reference/language/
 
-# Default language
-en:
-  locale: en-us
-  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
-  #contentDir: content/en
+# Spanish (main language - at root)
+es:
+  languageName: Español
+  locale: es-es
+  title: "Dr. Johel Padilla-Villanueva, DrPH"
+  weight: 1
+  params:
+    description: "Sitio académico de Dr. Johel Padilla-Villanueva, DrPH. Investigación sobre Systemic Tau (τ_s), el Reloj Extramental Discreto (RECD) y publicaciones científicas."
+  menu:
+    main:
+      - name: Bio
+        url: /
+        weight: 10
+      - name: Publicaciones
+        url: /#papers
+        weight: 11
+      - name: Experiencia
+        url: experience/
+        weight: 20
 
-# Uncomment the lines below to configure your website in a second language.
-#zh:
-#  locale: zh-Hans
-#  contentDir: content/zh
-#  title: Chinese website title...
-#  params:
-#    description: Site description in Chinese...
-#  menu:
-#    main:
-#      - name: 传
-#        url: '#about'
-#        weight: 1
+# English (secondary language)
+en:
+  languageName: English
+  locale: en-us
+  title: "Dr. Johel Padilla-Villanueva, DrPH"
+  weight: 2
+  params:
+    description: "Academic website of Dr. Johel Padilla-Villanueva, DrPH. Research on Systemic Tau (τ_s), the Discrete Extramental Clock Law (RECD), and scientific publications."
+  menu:
+    main:
+      - name: Bio
+        url: /
+        weight: 10
+      - name: Publications
+        url: /#papers
+        weight: 11
+      - name: Experience
+        url: experience/
+        weight: 20
