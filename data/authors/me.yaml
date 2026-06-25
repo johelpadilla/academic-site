@@ -20,7 +20,7 @@ bio: |
   Recent publications (2026) are available on Zenodo. Open to interdisciplinary collaboration.
 
 affiliations:
-  - name: "Auxiliary Professor, University of Puerto Rico at Carolina (DECEP / LEAP Academy)"
+  - name: "Auxiliary Professor, University of Puerto Rico at Carolina"
     url: "https://www.upr.edu/"
   - name: "Adjunct Professor, Graduate School of Public Health, University of Puerto Rico Medical Sciences Campus"
     url: "https://www.upr.edu/"
@@ -77,7 +77,7 @@ education:
 
 experience:
   - role: "Auxiliary Professor (Biology)"
-    org: "University of Puerto Rico at Carolina (DECEP + LEAP Academy)"
+    org: "University of Puerto Rico at Carolina"
     start: 2024-08-01
     summary: |
       Instructor for CIBI-3001 Introduction to Biology (undergraduate, dual-enrollment high school students). Focus on critical thinking, scientific inquiry, and hands-on labs.
