@@ -65,16 +65,6 @@ sections:
       filters:
         folders:
           - publications
-        exclude_featured: false
-    design:
-      view: citation
-  - block: collection
-    content:
-      title: Publications
-      text: ''
-      filters:
-        folders:
-          - publications
     design:
       view: citation
 ---

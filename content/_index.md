@@ -60,16 +60,6 @@ sections:
       columns: 2
   - block: collection
     content:
-      title: Publicaciones Recientes
-      text: ''
-      filters:
-        folders:
-          - publications
-        exclude_featured: false
-    design:
-      view: citation
-  - block: collection
-    content:
       title: Publicaciones
       text: ''
       filters:
