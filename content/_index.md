@@ -40,7 +40,7 @@ sections:
       text: |-
         Desarrollo marcos conceptuales en Systemic Tau (τ_s) y el Reloj Extramental Discreto (RECD). Integro análisis de dimensión fractal (D ≈ 1.98), permeabilidad ontológica y modelos discretos para sistemas complejos.
 
-        Mis publicaciones recientes (2026) están disponibles en Zenodo. El BibTeX completo y los PDFs organizados se encuentran en mi carpeta de OneDrive.
+        Mis publicaciones recientes (2026) están disponibles en [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Padilla-Villanueva%2C+Johel%22). El BibTeX completo y los PDFs organizados se encuentran en mi carpeta de OneDrive.
 
         [Ver todas las publicaciones](/publications/) • [Descargar BibTeX](/uploads/BibTeX_Clean_2026.bib) • [Descargar CV (PDF)](/uploads/resume.pdf)
 

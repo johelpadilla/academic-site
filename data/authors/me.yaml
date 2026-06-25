@@ -44,6 +44,9 @@ links:
   - icon: academicons/google-scholar
     url: https://scholar.google.com/citations?user=y5sLFVkAAAAJ&hl=en
     label: Google Scholar
+  - icon: academicons/zenodo
+    url: https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Padilla-Villanueva%2C+Johel%22
+    label: Zenodo
 
 interests:
   - Systemic Tau (τ_s) and Discrete Extramental Clock Law (RECD)
