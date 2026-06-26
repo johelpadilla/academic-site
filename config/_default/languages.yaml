@@ -18,6 +18,9 @@ es:
       - name: Publicaciones
         url: /#papers
         weight: 11
+      - name: Software
+        url: /#software
+        weight: 15
       - name: Experiencia
         url: experience/
         weight: 20
@@ -38,6 +41,9 @@ en:
       - name: Publications
         url: /#papers
         weight: 11
+      - name: Software
+        url: /#software
+        weight: 15
       - name: Experience
         url: experience/
         weight: 20

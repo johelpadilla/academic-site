@@ -17,7 +17,7 @@ bio: |
 
   His current research centers on Systemic Tau (τ_s) and the Discrete Extramental Clock Law (RECD / Ley del Reloj Extramental Discreto), integrating fractal analysis (D ≈ 1.98), ordinal renormalization, ontological emergence, Bayesian accumulation, and applications to early-warning systems for dengue and other complex public health phenomena. He also explores connections with philosophy of physics and synthesis across chaos theory, information theory, and non-Laplacian probability.
 
-  Recent publications (2026) are available on Zenodo. Open to interdisciplinary collaboration.
+  Recent publications (2026) are available on Zenodo. The reference implementation of the Systemic Tau (τ_s) and RECD frameworks is released as the open-source Python package `systemictau` v2.0.1. Open to interdisciplinary collaboration.
 
 affiliations:
   - name: "Auxiliary Professor, University of Puerto Rico at Carolina"
@@ -46,6 +46,9 @@ links:
   - icon: academicons/zenodo
     url: https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Padilla-Villanueva%2C+Johel%22
     label: Zenodo
+  - icon: brands/github
+    url: https://github.com/johelpadilla/systemictau
+    label: systemictau
 
 interests:
   - Systemic Tau (τ_s) and Discrete Extramental Clock Law (RECD)
