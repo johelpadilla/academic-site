@@ -38,7 +38,7 @@ sections:
       title: '📚 My Research'
       subtitle: ''
       text: |-
-        I develop conceptual frameworks in Systemic Tau (τ_s) and the Discrete Extramental Clock Law (RECD). I integrate fractal dimension analysis (D ≈ 1.98), ontological permeability, and discrete models for complex systems. The reference implementation is available as the Python package `systemictau` v2.0.1.
+        I develop conceptual frameworks in Systemic Tau (τ_s) and the Discrete Extramental Clock Law (RECD). I integrate fractal dimension analysis (D ≈ 1.98), ontological permeability, and discrete models for complex systems. The current reference implementation is the native **Systemic Tau v3.0** standalone desktop application for macOS.
 
         My recent publications (2026) are available on [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Padilla-Villanueva%2C+Johel%22). The complete BibTeX files and organized PDFs can be found in my OneDrive folder.
 
@@ -51,23 +51,31 @@ sections:
     id: software
     content:
       title: '💻 Software'
-      subtitle: 'systemictau v2.0.1'
+      subtitle: 'Systemic Tau v3.0 (macOS)'
       text: |-
         Reference implementation of the **Systemic Tau (τ_s)** paradigm and the **Discrete Extramental Clock Law (RECD)**.
 
-        The open-source Python package **`systemictau`** (v2.0.1) provides the computational tools to simulate, analyze, and visualize these theoretical frameworks.
+        **Systemic Tau v3.0** is a fully standalone native macOS desktop application that brings advanced pre-processing, deterministic rigorous reporting, and AI-driven insights into a single graphical interface.
 
-        **Installation:**
-        ```bash
-        pip install systemictau
-        ```
+        ### Key Features
+        - Standalone macOS App (no Python or terminal required)
+        - Transparent Data Health Layer for missing values (NaNs): strict abort, manual prompt, or auto-interpolation
+        - Advanced signal smoothing filters: Moving Average (n=3) and Savitzky-Golay (n=5)
+        - Save full reports and "Compare with File" feature
+        - Refactored mathematical kernel in a strict 7-section academic format
+
+        ### Installation (macOS)
+        1. Download `SystemicTau-Installer.dmg` from the Assets in GitHub Releases.
+        2. Double-click the .dmg file.
+        3. Drag `SystemicTau.app` to the Applications folder (or Desktop).
+        4. Launch the app. On first run: Right-click → "Open" to bypass the unsigned developer warning.
+
+        📖 Please read the **Quick Start Guide & User Manual** before your first analysis.
 
         **Links:**
-        - [GitHub](https://github.com/johelpadilla/systemictau) — Source code, documentation and examples
-        - [PyPI](https://pypi.org/project/systemictau/) — Version 2.0.1
-        - [Zenodo](https://doi.org/10.5281/zenodo.20902148) — Permanent DOI for citation
-
-        Designed for reproducible research in complex systems, nonlinear dynamics, and scientific applications.
+        - [GitHub Releases](https://github.com/johelpadilla/systemictau/releases) — Download the app (.dmg) and source code
+        - [Repository](https://github.com/johelpadilla/systemictau)
+        - [Documentation (USER_GUIDE)](https://github.com/johelpadilla/systemictau/blob/main/USER_GUIDE.md)
     design:
       columns: '1'
   - block: collection
