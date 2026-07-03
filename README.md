@@ -1,26 +1,84 @@
-# Academic site - Dr. Johel Padilla-Villanueva, DrPH
+# Academic Website - Dr. Johel Padilla-Villanueva, DrPH
 
-Personal academic website built with HugoBlox.
+📊 Personal academic website showcasing research in complex systems theory and public health.
 
-**Research focus:** Systemic Tau (τ_s) • Discrete Extramental Clock Law (RECD) • Fractal dynamics, complex systems, public health applications (dengue).
+**Live site**: [johelpadilla.com](https://github.com/johelpadilla/academic-site) *(Deploy URL)*
 
-## Local development
-```bash
-hugo server -D
+## 🔬 Research Focus
+
+- **Systemic Tau (τ_s)** - Novel ordinal-based framework for complex system analysis
+- **Discrete Extramental Clock (RECD)** - Ontological approach to time in complex systems
+- **Early-warning signals** - Applications to public health (dengue, epidemiology)
+- **Fractal dynamics** - Complex system behavior and structural reorganization
+
+## 🛠️ Built With
+
+- **[HugoBlox](https://hugoblox.com/)** - Academic website framework
+- **[Hugo](https://gohugo.io/)** - Static site generator
+
+## 📚 Content Structure
+
+```
+content/
+├── publications/    # 16+ peer-reviewed and preprint works (2026)
+├── projects/        # Active research projects
+├── teaching/        # Academic courses and materials
+└── slides/          # Presentation slides
 ```
 
-## Publications
-See content/publications/ for the 2026 Zenodo series (16+ works).
+## 🚀 Quick Start - Local Development
 
-CV and BibTeX are in static/uploads/.
+```bash
+# Clone and enter directory
+git clone https://github.com/johelpadilla/academic-site
+cd academic-site
 
-## Software
-Current reference implementation: **Systemic Tau v3.0** — Standalone macOS Desktop Application
+# Run local server (includes draft content)
+hugo server -D
 
-- GitHub Releases (download .dmg): https://github.com/johelpadilla/systemictau/releases
-- Repository: https://github.com/johelpadilla/systemictau
-- Documentation: https://github.com/johelpadilla/systemictau/blob/main/USER_GUIDE.md
+# Navigate to http://localhost:1313
+```
 
-The Python package `systemictau` (v2.x) remains available for programmatic use.
+## 📦 Software & Tools
 
+### Systemic Tau Package
+**Python package** for implementing the Systemic Tau framework:
+- 📦 **PyPI**: [`systemictau`](https://pypi.org/project/systemictau/)
+- 📖 **Documentation**: [GitHub](https://github.com/johelpadilla/systemictau)
+- 🐍 **Version**: v2.x (PyPI) | v3.0+ (macOS app)
 
+### macOS Desktop Application
+**Systemic Tau v3.0** - Standalone application
+- 📥 Download: [GitHub Releases](https://github.com/johelpadilla/systemictau/releases)
+- 📋 User Guide: [Documentation](https://github.com/johelpadilla/systemictau/blob/main/USER_GUIDE.md)
+
+## 📄 Curriculum Vitae
+
+- **CV (PDF)**: `static/uploads/CV.pdf`
+- **BibTeX database**: `static/uploads/publications.bib`
+
+## 🔗 Related Repositories
+
+| Repository | Purpose | Status |
+|---|---|---|
+| [`systemictau`](https://github.com/johelpadilla/systemictau) | Python implementation | ✅ Active |
+| [`tau-sistemic`](https://github.com/johelpadilla/tau-sistemic) | Core theory (Spanish) | 🔄 Development |
+| [`tau-sistemic-dengue-ews`](https://github.com/johelpadilla/tau-sistemic-dengue-ews) | Dengue application | ✅ Published |
+| [`ae_project`](https://github.com/johelpadilla/ae_project) | PhD thesis | 🔐 Private |
+
+## 📞 Contact & Collaboration
+
+- 📧 **Email**: See website contact page
+- 🏫 **Affiliation**: Universidad de Puerto Rico, DrPH Program
+- 🤝 **Collaboration**: Open to research partnerships in complex systems and public health
+
+## 📜 License & Usage
+
+Website content and materials are published under:
+- **Code**: MIT License
+- **Publications**: [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+
+---
+
+**Last Updated**: 2026  
+**Framework**: HugoBlox v5.x | Hugo v0.x
