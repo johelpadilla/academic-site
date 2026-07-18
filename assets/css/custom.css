@@ -1,0 +1,508 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   Tau Nexus — site design system
+   Academic identity for Systemic Tau / RECD / Academy Learning Tau
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+:root {
+  --tau-radius: 1rem;
+  --tau-radius-lg: 1.35rem;
+  --tau-shadow: 0 1px 2px rgb(15 23 42 / 0.04), 0 12px 32px -12px rgb(15 23 42 / 0.18);
+  --tau-shadow-hover: 0 4px 12px rgb(15 23 42 / 0.08), 0 24px 48px -16px rgb(29 78 216 / 0.28);
+  --tau-ring: 0 0 0 1px rgb(15 23 42 / 0.06);
+  --tau-glow: 0 0 0 1px rgb(56 189 248 / 0.25), 0 0 40px -8px rgb(56 189 248 / 0.45);
+  --tau-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --tau-max: 72rem;
+}
+
+.dark {
+  --tau-shadow: 0 1px 2px rgb(0 0 0 / 0.35), 0 16px 40px -12px rgb(0 0 0 / 0.55);
+  --tau-shadow-hover: 0 8px 24px rgb(0 0 0 / 0.4), 0 0 0 1px rgb(56 189 248 / 0.2);
+  --tau-ring: 0 0 0 1px rgb(255 255 255 / 0.06);
+}
+
+/* ── Base polish ─────────────────────────────────────────────────────────── */
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+::selection {
+  background: color-mix(in oklab, var(--color-primary-500, #1d4ed8) 28%, transparent);
+  color: inherit;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Subtle paper grain (light) / void depth (dark) */
+body::before {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.dark body::before {
+  opacity: 0.07;
+}
+
+/* ── Header / navbar glass ───────────────────────────────────────────────── */
+
+header.sticky,
+.navbar,
+nav[data-hb-header],
+#navbar-main,
+.hb-header {
+  backdrop-filter: blur(16px) saturate(1.2);
+  -webkit-backdrop-filter: blur(16px) saturate(1.2);
+  border-bottom: 1px solid color-mix(in oklab, currentColor 8%, transparent);
+  transition: box-shadow 0.35s var(--tau-ease), border-color 0.35s var(--tau-ease);
+}
+
+.navbar-brand,
+.navbar-brand a {
+  letter-spacing: -0.03em;
+  font-weight: 600;
+}
+
+/* Nav links */
+.navbar .nav-link,
+#nav-menu a {
+  position: relative;
+  font-size: 0.92rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  transition: color 0.2s var(--tau-ease);
+}
+
+.navbar .nav-link:hover,
+#nav-menu a:hover {
+  color: var(--color-primary-600, #1d4ed8);
+}
+
+.dark .navbar .nav-link:hover,
+.dark #nav-menu a:hover {
+  color: var(--color-primary-400, #38bdf8);
+}
+
+/* ── Section rhythm ──────────────────────────────────────────────────────── */
+
+.hbb-section,
+section.hbb-section {
+  position: relative;
+  z-index: 1;
+}
+
+/* Section titles — editorial underline accent */
+.hbb-section h2,
+.prose h2,
+section h2 {
+  letter-spacing: -0.03em;
+}
+
+#research .prose h1,
+#research h2,
+#software h2,
+#pillars h2,
+#papers h2,
+section#research .text-3xl,
+section#software .text-3xl {
+  position: relative;
+}
+
+/* ── Biography / hero ────────────────────────────────────────────────────── */
+
+/* Avatar: gradient ring + soft lift */
+img[alt*="Padilla"],
+.avatar img,
+.hbb-section img.rounded-full,
+img.rounded-full {
+  box-shadow:
+    0 0 0 3px color-mix(in oklab, var(--color-primary-500, #1d4ed8) 35%, transparent),
+    0 0 0 6px color-mix(in oklab, var(--color-secondary-500, #b45309) 18%, transparent),
+    var(--tau-shadow);
+}
+
+/* CTA button under bio */
+.hbb-section a[href*="resume"],
+.hbb-section a.btn,
+a.inline-flex[href*="resume"] {
+  border-radius: 9999px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.01em;
+  box-shadow: var(--tau-shadow);
+  transition: transform 0.25s var(--tau-ease), box-shadow 0.25s var(--tau-ease) !important;
+}
+
+.hbb-section a[href*="resume"]:hover,
+a.inline-flex[href*="resume"]:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--tau-shadow-hover);
+}
+
+/* ── Markdown / research / software panels ───────────────────────────────── */
+
+#research .prose,
+#software .prose,
+section#research .max-w-prose,
+section#software .max-w-prose,
+#research > div > div,
+#software > div > div {
+  /* soft card envelope when theme wraps content tightly */
+}
+
+/* Elevate prose containers in research + software */
+#research .prose,
+#software .prose {
+  max-width: 48rem;
+}
+
+#research .prose p,
+#software .prose p {
+  font-size: 1.05rem;
+}
+
+#software .prose table,
+#research .prose table,
+.prose table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: var(--tau-radius);
+  box-shadow: var(--tau-ring), var(--tau-shadow);
+  margin: 1.5rem 0 !important;
+}
+
+#software .prose th,
+#research .prose th,
+.prose th {
+  background: color-mix(in oklab, var(--color-primary-500, #1d4ed8) 10%, transparent);
+  font-weight: 600;
+  text-align: left;
+  padding: 0.75rem 1rem !important;
+}
+
+#software .prose td,
+#research .prose td,
+.prose td {
+  padding: 0.7rem 1rem !important;
+  border-top: 1px solid color-mix(in oklab, currentColor 8%, transparent);
+}
+
+#software .prose hr,
+#research .prose hr {
+  border: none;
+  height: 1px;
+  margin: 2rem 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    color-mix(in oklab, var(--color-primary-500, #1d4ed8) 45%, transparent),
+    color-mix(in oklab, var(--color-secondary-500, #b45309) 45%, transparent),
+    transparent
+  );
+}
+
+#software .prose h3,
+#research .prose h3 {
+  margin-top: 2rem;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+/* Inline code / DOI chips */
+.prose code {
+  border-radius: 0.4rem;
+  padding: 0.12rem 0.4rem;
+  font-size: 0.88em;
+  background: color-mix(in oklab, var(--color-primary-500, #1d4ed8) 10%, transparent);
+}
+
+/* Links with subtle underline animation */
+.prose a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  transition: color 0.2s var(--tau-ease), text-decoration-color 0.2s var(--tau-ease);
+}
+
+/* ── Software “product cards” via markdown structure ─────────────────────── */
+
+.tau-product-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 1fr;
+  margin: 1.5rem 0 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .tau-product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.tau-product-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  padding: 1.35rem 1.4rem 1.45rem;
+  border-radius: var(--tau-radius-lg);
+  background: color-mix(in oklab, white 88%, transparent);
+  box-shadow: var(--tau-ring), var(--tau-shadow);
+  transition: transform 0.35s var(--tau-ease), box-shadow 0.35s var(--tau-ease);
+  overflow: hidden;
+}
+
+.dark .tau-product-card {
+  background: color-mix(in oklab, #0f172a 82%, transparent);
+}
+
+.tau-product-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    var(--color-primary-500, #1d4ed8),
+    var(--color-secondary-500, #b45309)
+  );
+}
+
+.tau-product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--tau-shadow-hover);
+}
+
+.tau-product-card .tau-kicker {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-primary-600, #1d4ed8);
+}
+
+.dark .tau-product-card .tau-kicker {
+  color: var(--color-primary-400, #38bdf8);
+}
+
+.tau-product-card h3 {
+  margin: 0 !important;
+  font-size: 1.15rem !important;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+}
+
+.tau-product-card p {
+  margin: 0 !important;
+  font-size: 0.95rem !important;
+  opacity: 0.88;
+  flex: 1;
+}
+
+.tau-product-card .tau-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.35rem;
+}
+
+.tau-product-card .tau-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.35rem 0.7rem;
+  border-radius: 9999px;
+  text-decoration: none !important;
+  background: color-mix(in oklab, var(--color-primary-500, #1d4ed8) 12%, transparent);
+  color: inherit;
+  transition: background 0.2s var(--tau-ease), transform 0.2s var(--tau-ease);
+}
+
+.tau-product-card .tau-links a:hover {
+  background: color-mix(in oklab, var(--color-primary-500, #1d4ed8) 22%, transparent);
+  transform: translateY(-1px);
+}
+
+/* ── Publication cards / collection ──────────────────────────────────────── */
+
+.article-card,
+.card-simple,
+.stream-item,
+.view-card,
+.card,
+a.card,
+div[class*="article"] {
+  transition: transform 0.3s var(--tau-ease), box-shadow 0.3s var(--tau-ease);
+}
+
+/* Citation list */
+.pub-list-item,
+.media.stream-item,
+li.pub-row {
+  border-radius: 0.75rem;
+  padding: 0.85rem 1rem !important;
+  margin-bottom: 0.5rem;
+  transition: background 0.2s var(--tau-ease);
+}
+
+.pub-list-item:hover,
+.media.stream-item:hover {
+  background: color-mix(in oklab, var(--color-primary-500, #1d4ed8) 6%, transparent);
+}
+
+/* Tags / chips */
+.badge,
+.article-tags a,
+span.badge,
+a.label {
+  border-radius: 9999px !important;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+/* ── Stats + features blocks ─────────────────────────────────────────────── */
+
+.stats-item,
+[class*="stats"] .rounded-2xl,
+[class*="FeatureCard"] {
+  transition: transform 0.3s var(--tau-ease), box-shadow 0.3s var(--tau-ease);
+}
+
+/* ── Footer ──────────────────────────────────────────────────────────────── */
+
+footer {
+  position: relative;
+  z-index: 1;
+  border-top: 1px solid color-mix(in oklab, currentColor 10%, transparent);
+}
+
+footer a {
+  transition: color 0.2s var(--tau-ease);
+}
+
+/* ── Focus accessibility ─────────────────────────────────────────────────── */
+
+:focus-visible {
+  outline: 2px solid var(--color-primary-500, #1d4ed8);
+  outline-offset: 3px;
+  border-radius: 0.25rem;
+}
+
+/* ── Custom scrollbar ────────────────────────────────────────────────────── */
+
+@media (pointer: fine) {
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: color-mix(in oklab, currentColor 22%, transparent);
+    border-radius: 9999px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: color-mix(in oklab, currentColor 38%, transparent);
+    background-clip: padding-box;
+  }
+}
+
+/* ── Discrete “clock tick” accent bar at page top ────────────────────────── */
+
+body > header::after,
+.hb-header::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    var(--color-primary-500, #1d4ed8) 0%,
+    var(--color-secondary-500, #b45309) 45%,
+    var(--color-primary-400, #38bdf8) 100%
+  );
+  opacity: 0.85;
+}
+
+/* ── Experience page polish ──────────────────────────────────────────────── */
+
+.timeline,
+.resume-timeline,
+.experience-item {
+  border-radius: var(--tau-radius);
+}
+
+/* ── Page content max-width comfort ──────────────────────────────────────── */
+
+main,
+.page-body,
+.universal-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Soft section banding for visual rhythm ─────────────────────────────── */
+
+#pillars,
+#software,
+#papers {
+  scroll-margin-top: 5rem;
+}
+
+#research,
+#software {
+  scroll-margin-top: 5rem;
+}
+
+/* Alternate subtle wash for software section */
+#software {
+  background:
+    radial-gradient(ellipse 80% 60% at 10% 0%, color-mix(in oklab, var(--color-primary-500, #1d4ed8) 12%, transparent), transparent 60%),
+    radial-gradient(ellipse 60% 50% at 90% 100%, color-mix(in oklab, var(--color-secondary-500, #b45309) 10%, transparent), transparent 55%);
+}
+
+#papers {
+  background:
+    radial-gradient(ellipse 70% 50% at 50% 0%, color-mix(in oklab, var(--color-primary-500, #1d4ed8) 8%, transparent), transparent 60%);
+}
+
+/* ── Print ───────────────────────────────────────────────────────────────── */
+
+@media print {
+  body::before {
+    display: none;
+  }
+  header,
+  footer,
+  .theme-toggle,
+  [data-search-toggle] {
+    display: none !important;
+  }
+}

@@ -5,6 +5,7 @@
 # Spanish (main language - at root)
 es:
   languageName: Español
+  label: Español
   locale: es-es
   title: "Dr. Johel Padilla-Villanueva, DrPH"
   weight: 1
@@ -12,15 +13,18 @@ es:
     description: "Sitio académico de Dr. Johel Padilla-Villanueva, DrPH. Investigación sobre Systemic Tau (τ_s), RECD, Academy Learning Tau, excess³ y publicaciones abiertas en Zenodo."
   menu:
     main:
-      - name: Bio
+      - name: Inicio
         url: /
         weight: 10
-      - name: Publicaciones
-        url: /#papers
-        weight: 11
+      - name: Pilares
+        url: /#pillars
+        weight: 12
       - name: Software
         url: /#software
-        weight: 15
+        weight: 14
+      - name: Publicaciones
+        url: /#papers
+        weight: 16
       - name: Experiencia
         url: experience/
         weight: 20
@@ -28,22 +32,26 @@ es:
 # English (secondary language)
 en:
   languageName: English
+  label: English
   locale: en-us
   title: "Dr. Johel Padilla-Villanueva, DrPH"
   weight: 2
   params:
-    description: "Academic website of Dr. Johel Padilla-Villanueva, DrPH. Research on Systemic Tau (τ_s), RECD, Academy Learning Tau, excess³, and open publications on Zenodo."
+    description: "Academic website of Dr. Johel Padilla-Villanueva, DrPH. Research on Systemic Tau (τ_s), RECD, Academy Learning Tau, excess³, and open monographs."
   menu:
     main:
-      - name: Bio
+      - name: Home
         url: /
         weight: 10
-      - name: Publications
-        url: /#papers
-        weight: 11
+      - name: Pillars
+        url: /#pillars
+        weight: 12
       - name: Software
         url: /#software
-        weight: 15
+        weight: 14
+      - name: Publications
+        url: /#papers
+        weight: 16
       - name: Experience
         url: experience/
         weight: 20

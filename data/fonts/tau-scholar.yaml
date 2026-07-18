@@ -1,0 +1,36 @@
+# Custom font pack — Tau Scholar
+# Editorial serif for ideas; clean sans for reading; mono for code/DOI.
+
+hugoblox:
+  meta:
+    format: "hugoblox-font@1"
+    name: "Tau Scholar"
+    vendor: "johelpadilla"
+    version: "1.0.0"
+    license: "MIT"
+    style: "mixed"
+    description: "Fraunces + Source Sans 3 — scholarly gravitas with modern clarity"
+
+  families:
+    heading: "Fraunces"
+    body: "Source Sans 3"
+    code: "JetBrains Mono"
+
+  weights:
+    heading: [500, 600, 700]
+    body: [400, 500, 600, 700]
+    code: [400, 500]
+
+  leading:
+    heading: 1.15
+    body: 1.7
+    code: 1.5
+
+  tracking:
+    heading: "-0.02em"
+    body: "0.01em"
+
+  variable:
+    heading: true
+    body: true
+    code: true

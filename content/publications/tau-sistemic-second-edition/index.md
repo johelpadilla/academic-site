@@ -10,9 +10,10 @@ publication_types: ["book"]
 peer_reviewed: false
 open_access: true
 
-# Independently published (KDP free ISBN)
-publication: "Independently published"
-publication_short: "ISBN 979-8-18776-367-2"
+publication:
+  name: "Independently published"
+  short_name: "ISBN 979-8-18776-367-2"
+  publisher: "Independently published"
 
 links:
   - type: pdf

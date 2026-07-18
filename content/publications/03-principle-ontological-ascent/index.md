@@ -15,5 +15,5 @@ links:
     url: "https://doi.org/10.5281/zenodo.20769218"
 summary: "Principle of Ontological Ascent: hierarchical reorganization and new regimes of temporal discreteness."
 tags: ["Ontological Ascent", "RECD", "Temporal Discreteness", "Complex Systems"]
-featured: true
+featured: false
 ---

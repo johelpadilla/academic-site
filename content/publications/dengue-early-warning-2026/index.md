@@ -28,5 +28,5 @@ tags:
 - Systemic Tau
 - Public Health
 
-featured: true
+featured: false
 ---

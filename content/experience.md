@@ -1,33 +1,36 @@
 ---
-title: 'Experience'
+title: 'Experiencia · Experience'
 date: 2023-10-24
 type: landing
+summary: 'Trayectoria académica, investigación y docencia.'
 
 design:
-  spacing: '5rem'
+  spacing: '4rem'
 
-# Note: `username` refers to the user's folder name in `content/authors/`
-
-# Page sections
 sections:
+  - block: markdown
+    content:
+      title: ''
+      text: |-
+        Trayectoria en **salud ambiental**, epidemiología de vectores y el programa de investigación **Systemic Tau / RECD**.
+    design:
+      columns: '1'
   - block: resume-experience
     content:
       username: me
     design:
-      # Hugo date format
       date_format: 'January 2006'
-      # Education or Experience section first?
       is_education_first: false
   - block: resume-skills
     content:
-      title: Skills
+      title: Competencias
       username: me
   - block: resume-awards
     content:
-      title: Awards
+      title: Reconocimientos
       username: me
   - block: resume-languages
     content:
-      title: Languages
+      title: Idiomas
       username: me
 ---

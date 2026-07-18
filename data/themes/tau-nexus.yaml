@@ -1,0 +1,43 @@
+# Custom theme — Tau Nexus
+# Discrete-time academic identity: ink, copper, and clock-teal.
+
+hugoblox:
+  meta:
+    format: "hugoblox-theme@1"
+    name: "Tau Nexus"
+    vendor: "johelpadilla"
+    version: "1.0.0"
+    license: "MIT"
+    description: "Deep ink + copper + teal — Systemic Tau / RECD academic identity"
+
+  type: "dual"
+
+  light:
+    colors:
+      primary: "#1d4ed8"   # blue-700 — clear academic signal
+      secondary: "#b45309" # amber-700 — copper / philosophical warmth
+      neutral: "slate"
+    surfaces:
+      background: "#f7f5f1" # warm paper
+      foreground: "#0f172a" # slate-900
+      header:
+        background: "rgba(255, 255, 255, 0.82)"
+        foreground: "#0f172a"
+      footer:
+        background: "#0f172a"
+        foreground: "#e2e8f0"
+
+  dark:
+    colors:
+      primary: "#38bdf8"   # sky-400 — luminous clock face
+      secondary: "#fbbf24" # amber-400 — gold tick
+      neutral: "slate"
+    surfaces:
+      background: "#070b14" # near-void ink
+      foreground: "#e8eef9"
+      header:
+        background: "rgba(7, 11, 20, 0.78)"
+        foreground: "#f8fafc"
+      footer:
+        background: "#030712"
+        foreground: "#94a3b8"

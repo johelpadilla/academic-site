@@ -9,5 +9,5 @@ open_access: true
 license: CC-BY-4.0
 summary: "Síntesis Magna del Tau Sistémico 2026 (versión 6) — integración de los marcos RECD y aplicaciones."
 tags: ["Síntesis", "Tau Sistémico", "RECD", "2026"]
-featured: true
+featured: false
 ---

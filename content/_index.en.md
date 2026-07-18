@@ -1,5 +1,4 @@
 ---
-# Leave the homepage title empty to use the site title
 title: ''
 summary: ''
 date: 2022-10-24
@@ -8,102 +7,146 @@ type: landing
 sections:
   - block: resume-biography-3
     content:
-      # Choose a user profile to display (a folder name within `content/authors/`)
       username: me
       text: ''
-      # Show a call-to-action button under your biography? (optional)
       button:
         text: Download CV (PDF)
         url: uploads/resume.pdf
       headings:
-        about: ''
-        education: ''
-        interests: ''
+        about: 'Profile'
+        education: 'Education'
+        interests: 'Research lines'
     design:
-      # Use the new Gradient Mesh which automatically adapts to the selected theme colors
       background:
         gradient_mesh:
           enable: true
-
-      # Name heading sizing to accommodate long or short names
+          style: orbs
+          animation: pulse
+          intensity: medium
+          orb_count: 3
+          colors:
+            - "primary-500/25"
+            - "secondary-500/20"
+            - "primary-400/15"
       name:
-        size: md # Options: xs, sm, md, lg (default), xl
-
-      # Avatar customization
+        size: lg
       avatar:
-        size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
-        shape: circle # Options: circle (default), square, rounded
-  - block: markdown
+        size: large
+        shape: circle
+
+  - block: stats
+    id: impact
     content:
-      title: '📚 My Research'
-      subtitle: ''
+      title: 'Research program'
+      text: 'Open metrics from the 2022–2026 corpus'
+      items:
+        - statistic: "20+"
+          description: Publications and preprints on Zenodo / site
+          sub_metric: Open access · citable DOIs
+          icon: hero/document-text
+        - statistic: "3"
+          description: Open software products
+          sub_metric: Academy · Systemic Tau · excess³
+          icon: hero/code-bracket
+        - statistic: "2"
+          description: Synthesis monographs (2026)
+          sub_metric: Tau 2nd ed. · Act of being
+          icon: hero/book-open
+        - statistic: "ES · EN · FR"
+          description: Multilingual pedagogy
+          sub_metric: Academy Learning Tau
+          icon: hero/language
+    design:
+      layout: cards
+
+  - block: features
+    id: pillars
+    content:
+      title: 'Program pillars'
+      subtitle: 'Theory · software · teaching · philosophy'
+      text: 'One thread: extramental time, ordinal metrics, and open science.'
+      items:
+        - name: 'Systemic Tau (τ_s)'
+          description: 'Ordinal observable of reorganization in complex series; relational coupling beyond univariate amplitude.'
+          icon: hero/chart-bar
+        - name: 'RECD'
+          description: 'Discrete Extramental Clock: nested levels Φ₁–Φ₃, conjunctions, and intrinsic process timing.'
+          icon: hero/clock
+        - name: 'excess³ / Φ₃'
+          description: 'Pre-specified proxy for order-3 synergistic surplus, with nulls and synthetic validation.'
+          icon: hero/cube-transparent
+        - name: 'Early warning'
+          description: 'Applications to dengue and public-health phenomena with dual reading (τ_s + classical EWS).'
+          icon: hero/shield-check
+        - name: 'Open software'
+          description: 'Academy Learning Tau (web), Systemic Tau (macOS), and citable repositories with DOI.'
+          icon: hero/command-line
+        - name: 'Polian philosophy'
+          description: 'Relational-discrete act of being: persisting, physis, and void in continuity with Leonardo Polo.'
+          icon: hero/academic-cap
+    design:
+      layout: bento
+
+  - block: markdown
+    id: research
+    content:
+      title: 'Research'
+      subtitle: 'Frameworks, synthesis, and open access'
       text: |-
-        I develop conceptual frameworks in Systemic Tau (τ_s) and the Discrete Extramental Clock Law (RECD). I integrate fractal dimension analysis (D ≈ 1.98), ontological permeability, ordinal metrics, and discrete models for complex systems, with applications to early warning (dengue) and higher-order dependence proxies (excess³). In philosophy, I continue Polo’s project with the monograph *El acto de ser relacional-discreto*; the program synthesis is *Systemic Tau and the Discrete Architecture of Time* (2nd ed., ISBN 979-8-18776-367-2).
+        I develop conceptual frameworks in **Systemic Tau (τ_s)** and the **Discrete Extramental Clock (RECD)**. I integrate fractal dimension (D ≈ 1.98), ontological permeability, ordinal metrics, and discrete models for complex systems — with applications to early warning (dengue) and higher-order dependence proxies (**excess³**).
 
-        Open software in this program includes the educational platform **[Academy Learning Tau](https://academylearningtau.streamlit.app)** (Streamlit; [DOI 10.5281/zenodo.21301571](https://doi.org/10.5281/zenodo.21301571)) and the **Systemic Tau** desktop application for macOS.
+        In philosophy, I continue Polo’s project with *El acto de ser relacional-discreto*. The program synthesis is *Systemic Tau and the Discrete Architecture of Time* (2nd ed., ISBN 979-8-18776-367-2).
 
-        Recent publications (2026) are available on [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Padilla-Villanueva%2C+Johel%22).
+        [Publications](publications/) · [BibTeX](uploads/BibTeX_Clean_2026.bib) · [CV (PDF)](uploads/resume.pdf) · [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Padilla-Villanueva%2C+Johel%22)
 
-        [See all publications](publications/) · [Download BibTeX](uploads/BibTeX_Clean_2026.bib) · [Download CV (PDF)](uploads/resume.pdf)
-
-        Contact for collaboration: [joel.padilla2@upr.edu](mailto:joel.padilla2@upr.edu) · [johelpadilla@gmail.com](mailto:johelpadilla@gmail.com)
+        **Collaboration:** [joel.padilla2@upr.edu](mailto:joel.padilla2@upr.edu) · [johelpadilla@gmail.com](mailto:johelpadilla@gmail.com)
     design:
       columns: '1'
+
   - block: markdown
     id: software
     content:
-      title: '💻 Software'
-      subtitle: 'Academy Learning Tau · Systemic Tau · excess³'
+      title: 'Software'
+      subtitle: 'Open implementations of the paradigm'
       text: |-
-        Open implementations of the **Systemic Tau (τ_s)** paradigm and the **Discrete Extramental Clock Law (RECD)**.
-
-        ---
-
-        ### 1. Academy Learning Tau v1.1.0 — educational platform (web)
-
-        Open **teaching and exploratory research** platform (Streamlit) for ordinal τ_s metrics, nested RECD levels, classical early-warning signals, surrogate nulls, and a multipage laboratory with reproducible exports. Languages: **Spanish · English · French**.
-
-        **Cite / DOI:** [10.5281/zenodo.21301571](https://doi.org/10.5281/zenodo.21301571)
-
-        | Resource | Link |
-        |----------|------|
-        | Live app | [academylearningtau.streamlit.app](https://academylearningtau.streamlit.app) |
-        | Repository | [github.com/johelpadilla/academy-learning-tau](https://github.com/johelpadilla/academy-learning-tau) |
-        | Release v1.1.0 | [GitHub Releases](https://github.com/johelpadilla/academy-learning-tau/releases/tag/v1.1.0) |
-        | Zenodo | [doi.org/10.5281/zenodo.21301571](https://doi.org/10.5281/zenodo.21301571) |
-
-        **Modules:** Foundations · Mathematics · Domains · Laboratory · Learning path · Evidence · Teaching · Assessments · Library.
-
-        ---
-
-        ### 2. Systemic Tau — desktop application (macOS)
-
-        Native app for analysis with pre-processing, data-health layer (NaNs), signal smoothing, deterministic reports, and an academic-format kernel. Install from the `.dmg` on GitHub Releases.
-
-        | Resource | Link |
-        |----------|------|
-        | Releases (.dmg + source) | [github.com/johelpadilla/systemictau/releases](https://github.com/johelpadilla/systemictau/releases) |
-        | Repository | [github.com/johelpadilla/systemictau](https://github.com/johelpadilla/systemictau) |
-        | User guide | [USER_GUIDE.md](https://github.com/johelpadilla/systemictau/blob/main/USER_GUIDE.md) |
-
-        *macOS install:* open the `.dmg` → drag the app to Applications → on first launch, right-click → “Open” if the system warns about an unsigned developer.
-
-        ---
-
-        ### 3. excess³ — continuous proxy for order-3 dependence
-
-        Document family and code for a pre-specified proxy of order-3 synergistic surplus (methods + synthetic validation, Spanish introduction, cross-disciplinary guide).
-
-        | Resource | Link |
-        |----------|------|
-        | Repository | [github.com/johelpadilla/excess3](https://github.com/johelpadilla/excess3) |
-        | DOI | [10.5281/zenodo.21385937](https://doi.org/10.5281/zenodo.21385937) |
+        <div class="tau-product-grid">
+          <div class="tau-product-card">
+            <span class="tau-kicker">Education · Web</span>
+            <h3>Academy Learning Tau v1.1</h3>
+            <p>Streamlit platform for teaching and exploratory research: τ_s, RECD, EWS, surrogates, assessments, and library. ES · EN · FR.</p>
+            <div class="tau-links">
+              <a href="https://academylearningtau.streamlit.app">Live app</a>
+              <a href="https://doi.org/10.5281/zenodo.21301571">DOI</a>
+              <a href="https://github.com/johelpadilla/academy-learning-tau">GitHub</a>
+            </div>
+          </div>
+          <div class="tau-product-card">
+            <span class="tau-kicker">Desktop · macOS</span>
+            <h3>Systemic Tau</h3>
+            <p>Native app for analysis, data-health layer, smoothing, deterministic reports, and academic-format kernel.</p>
+            <div class="tau-links">
+              <a href="https://github.com/johelpadilla/systemictau/releases">Releases</a>
+              <a href="https://github.com/johelpadilla/systemictau">Repository</a>
+              <a href="https://github.com/johelpadilla/systemictau/blob/main/USER_GUIDE.md">Guide</a>
+            </div>
+          </div>
+          <div class="tau-product-card">
+            <span class="tau-kicker">Methods · Zenodo</span>
+            <h3>excess³</h3>
+            <p>Continuous proxy for order-3 dependence: methods, Spanish intro, and cross-disciplinary guide with synthetic validation.</p>
+            <div class="tau-links">
+              <a href="https://doi.org/10.5281/zenodo.21385937">DOI</a>
+              <a href="https://github.com/johelpadilla/excess3">GitHub</a>
+            </div>
+          </div>
+        </div>
     design:
       columns: '1'
+
   - block: collection
     id: papers
     content:
-      title: Featured Publications
+      title: 'Featured'
       filters:
         folders:
           - publications
@@ -111,10 +154,11 @@ sections:
     design:
       view: article-grid
       columns: 2
+
   - block: collection
     content:
-      title: Publications
-      text: ''
+      title: 'Publication catalog'
+      text: 'Full list in citation format.'
       filters:
         folders:
           - publications

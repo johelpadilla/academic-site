@@ -15,5 +15,5 @@ links:
     url: "https://doi.org/10.5281/zenodo.20587751"
 summary: "Teorema de reducción a la universalidad de Feigenbaum bajo observabilidad ordinal en el Tau Sistémico y RECD."
 tags: ["Feigenbaum", "Tau Sistémico", "RECD", "Teorema"]
-featured: true
+featured: false
 ---
