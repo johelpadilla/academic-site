@@ -38,44 +38,66 @@ sections:
       title: '📚 Mi Investigación'
       subtitle: ''
       text: |-
-        Desarrollo marcos conceptuales en Systemic Tau (τ_s) y el Reloj Extramental Discreto (RECD). Integro análisis de dimensión fractal (D ≈ 1.98), permeabilidad ontológica y modelos discretos para sistemas complejos. La implementación de referencia actual es la aplicación de escritorio nativa **Systemic Tau v3.0** para macOS.
+        Desarrollo marcos conceptuales en Systemic Tau (τ_s) y el Reloj Extramental Discreto (RECD). Integro análisis de dimensión fractal (D ≈ 1.98), permeabilidad ontológica, métricas ordinales y modelos discretos para sistemas complejos, con aplicaciones a alerta temprana (dengue) y a proxies de dependencia de orden superior (excess³).
 
-        Mis publicaciones recientes (2026) están disponibles en [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Padilla-Villanueva%2C+Johel%22). El BibTeX completo y los PDFs organizados se encuentran en mi carpeta de OneDrive.
+        El software abierto del programa incluye la plataforma educativa **[Academy Learning Tau](https://academylearningtau.streamlit.app)** (Streamlit; [DOI 10.5281/zenodo.21301571](https://doi.org/10.5281/zenodo.21301571)) y la aplicación de escritorio **Systemic Tau** para macOS.
 
-        [Ver todas las publicaciones](/publications/) • [Descargar BibTeX](/uploads/BibTeX_Clean_2026.bib) • [Descargar CV (PDF)](/uploads/resume.pdf)
+        Mis publicaciones recientes (2026) están disponibles en [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Padilla-Villanueva%2C+Johel%22).
 
-        Contacto para colaboración: joel.padilla2@upr.edu / johelpadilla@gmail.com
+        [Ver todas las publicaciones](publications/) · [Descargar BibTeX](uploads/BibTeX_Clean_2026.bib) · [Descargar CV (PDF)](uploads/resume.pdf)
+
+        Contacto para colaboración: [joel.padilla2@upr.edu](mailto:joel.padilla2@upr.edu) · [johelpadilla@gmail.com](mailto:johelpadilla@gmail.com)
     design:
       columns: '1'
   - block: markdown
     id: software
     content:
       title: '💻 Software'
-      subtitle: 'Systemic Tau v3.0 (macOS)'
+      subtitle: 'Academy Learning Tau · Systemic Tau · excess³'
       text: |-
-        Implementación de referencia del paradigma **Tau Sistémico (τ_s)** y de la **Ley del Reloj Extramental Discreto (RECD)**.
+        Implementaciones abiertas del paradigma **Tau Sistémico (τ_s)** y de la **Ley del Reloj Extramental Discreto (RECD)**.
 
-        **Systemic Tau v3.0** es una aplicación de escritorio nativa y autónoma para macOS que integra pre-procesamiento avanzado, reportes deterministas rigurosos e insights impulsados por IA en una interfaz gráfica única.
+        ---
 
-        ### Características clave
-        - Aplicación independiente para macOS (sin Python ni terminal)
-        - Capa de salud de datos transparente (manejo de NaNs: aborto estricto, prompt manual o auto-interpolación)
-        - Filtros de suavizado de señales: Media Móvil (n=3) y Savitzky-Golay (n=5)
-        - Guardar reportes completos y función "Comparar con Archivo"
-        - Núcleo matemático refactorizado en formato académico estricto de 7 secciones
+        ### 1. Academy Learning Tau v1.1.0 — plataforma educativa (web)
 
-        ### Instalación (macOS)
-        1. Descarga `SystemicTau-Installer.dmg` desde los Assets en GitHub Releases.
-        2. Abre el archivo .dmg.
-        3. Arrastra `SystemicTau.app` a la carpeta Aplicaciones (o Escritorio).
-        4. Ejecuta la app. En el primer lanzamiento: clic derecho → "Abrir" para saltar la advertencia de desarrollador no firmado.
+        Plataforma abierta de **docencia e investigación exploratoria** (Streamlit) para métricas ordinales τ_s, niveles RECD anidados, señales clásicas de alerta temprana, nulos por surrogados y laboratorio multipágina con exportaciones reproducibles. Idiomas: **español · inglés · francés**.
 
-        📖 Lee la **Guía de Inicio Rápido y Manual de Usuario** antes de tu primer análisis.
+        **Citar / DOI:** [10.5281/zenodo.21301571](https://doi.org/10.5281/zenodo.21301571)
 
-        **Enlaces:**
-        - [GitHub Releases](https://github.com/johelpadilla/systemictau/releases) — Descargar la app (.dmg) y código fuente
-        - [Repositorio](https://github.com/johelpadilla/systemictau)
-        - [Documentación (USER_GUIDE)](https://github.com/johelpadilla/systemictau/blob/main/USER_GUIDE.md)
+        | Recurso | Enlace |
+        |---------|--------|
+        | App en vivo | [academylearningtau.streamlit.app](https://academylearningtau.streamlit.app) |
+        | Repositorio | [github.com/johelpadilla/academy-learning-tau](https://github.com/johelpadilla/academy-learning-tau) |
+        | Release v1.1.0 | [GitHub Releases](https://github.com/johelpadilla/academy-learning-tau/releases/tag/v1.1.0) |
+        | Zenodo | [doi.org/10.5281/zenodo.21301571](https://doi.org/10.5281/zenodo.21301571) |
+
+        **Módulos:** Fundamentos · Matemática · Dominios · Laboratorio · Ruta de aprendizaje · Evidencia · Docencia · Evaluaciones · Biblioteca.
+
+        ---
+
+        ### 2. Systemic Tau — aplicación de escritorio (macOS)
+
+        Aplicación nativa para análisis con pre-procesamiento, capa de salud de datos (NaNs), suavizado de señales, reportes deterministas y núcleo en formato académico. Instalación desde el instalador `.dmg` en GitHub Releases.
+
+        | Recurso | Enlace |
+        |---------|--------|
+        | Releases (.dmg + código) | [github.com/johelpadilla/systemictau/releases](https://github.com/johelpadilla/systemictau/releases) |
+        | Repositorio | [github.com/johelpadilla/systemictau](https://github.com/johelpadilla/systemictau) |
+        | Guía de usuario | [USER_GUIDE.md](https://github.com/johelpadilla/systemictau/blob/main/USER_GUIDE.md) |
+
+        *Instalación (macOS):* abrir el `.dmg` → arrastrar la app a Aplicaciones → en el primer arranque, clic derecho → «Abrir» si el sistema advierte de desarrollador no firmado.
+
+        ---
+
+        ### 3. excess³ — proxy continuo de dependencia de orden 3
+
+        Familia documental y código para un proxy preespecificado de *synergistic surplus* de orden 3 (métodos + validación sintética, intro en español, guía interdisciplinaria).
+
+        | Recurso | Enlace |
+        |---------|--------|
+        | Repositorio | [github.com/johelpadilla/excess3](https://github.com/johelpadilla/excess3) |
+        | DOI | [10.5281/zenodo.21385937](https://doi.org/10.5281/zenodo.21385937) |
     design:
       columns: '1'
   - block: collection

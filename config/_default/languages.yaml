@@ -9,7 +9,7 @@ es:
   title: "Dr. Johel Padilla-Villanueva, DrPH"
   weight: 1
   params:
-    description: "Sitio académico de Dr. Johel Padilla-Villanueva, DrPH. Investigación sobre Systemic Tau (τ_s), el Reloj Extramental Discreto (RECD) y publicaciones científicas."
+    description: "Sitio académico de Dr. Johel Padilla-Villanueva, DrPH. Investigación sobre Systemic Tau (τ_s), RECD, Academy Learning Tau, excess³ y publicaciones abiertas en Zenodo."
   menu:
     main:
       - name: Bio
@@ -32,7 +32,7 @@ en:
   title: "Dr. Johel Padilla-Villanueva, DrPH"
   weight: 2
   params:
-    description: "Academic website of Dr. Johel Padilla-Villanueva, DrPH. Research on Systemic Tau (τ_s), the Discrete Extramental Clock Law (RECD), and scientific publications."
+    description: "Academic website of Dr. Johel Padilla-Villanueva, DrPH. Research on Systemic Tau (τ_s), RECD, Academy Learning Tau, excess³, and open publications on Zenodo."
   menu:
     main:
       - name: Bio

@@ -38,44 +38,66 @@ sections:
       title: '📚 My Research'
       subtitle: ''
       text: |-
-        I develop conceptual frameworks in Systemic Tau (τ_s) and the Discrete Extramental Clock Law (RECD). I integrate fractal dimension analysis (D ≈ 1.98), ontological permeability, and discrete models for complex systems. The current reference implementation is the native **Systemic Tau v3.0** standalone desktop application for macOS.
+        I develop conceptual frameworks in Systemic Tau (τ_s) and the Discrete Extramental Clock Law (RECD). I integrate fractal dimension analysis (D ≈ 1.98), ontological permeability, ordinal metrics, and discrete models for complex systems, with applications to early warning (dengue) and higher-order dependence proxies (excess³).
 
-        My recent publications (2026) are available on [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Padilla-Villanueva%2C+Johel%22). The complete BibTeX files and organized PDFs can be found in my OneDrive folder.
+        Open software in this program includes the educational platform **[Academy Learning Tau](https://academylearningtau.streamlit.app)** (Streamlit; [DOI 10.5281/zenodo.21301571](https://doi.org/10.5281/zenodo.21301571)) and the **Systemic Tau** desktop application for macOS.
 
-        [See all publications](/publications/) • [Download BibTeX](/uploads/BibTeX_Clean_2026.bib) • [Download CV (PDF)](/uploads/resume.pdf)
+        Recent publications (2026) are available on [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Padilla-Villanueva%2C+Johel%22).
 
-        Contact for collaboration: joel.padilla2@upr.edu / johelpadilla@gmail.com
+        [See all publications](publications/) · [Download BibTeX](uploads/BibTeX_Clean_2026.bib) · [Download CV (PDF)](uploads/resume.pdf)
+
+        Contact for collaboration: [joel.padilla2@upr.edu](mailto:joel.padilla2@upr.edu) · [johelpadilla@gmail.com](mailto:johelpadilla@gmail.com)
     design:
       columns: '1'
   - block: markdown
     id: software
     content:
       title: '💻 Software'
-      subtitle: 'Systemic Tau v3.0 (macOS)'
+      subtitle: 'Academy Learning Tau · Systemic Tau · excess³'
       text: |-
-        Reference implementation of the **Systemic Tau (τ_s)** paradigm and the **Discrete Extramental Clock Law (RECD)**.
+        Open implementations of the **Systemic Tau (τ_s)** paradigm and the **Discrete Extramental Clock Law (RECD)**.
 
-        **Systemic Tau v3.0** is a fully standalone native macOS desktop application that brings advanced pre-processing, deterministic rigorous reporting, and AI-driven insights into a single graphical interface.
+        ---
 
-        ### Key Features
-        - Standalone macOS App (no Python or terminal required)
-        - Transparent Data Health Layer for missing values (NaNs): strict abort, manual prompt, or auto-interpolation
-        - Advanced signal smoothing filters: Moving Average (n=3) and Savitzky-Golay (n=5)
-        - Save full reports and "Compare with File" feature
-        - Refactored mathematical kernel in a strict 7-section academic format
+        ### 1. Academy Learning Tau v1.1.0 — educational platform (web)
 
-        ### Installation (macOS)
-        1. Download `SystemicTau-Installer.dmg` from the Assets in GitHub Releases.
-        2. Double-click the .dmg file.
-        3. Drag `SystemicTau.app` to the Applications folder (or Desktop).
-        4. Launch the app. On first run: Right-click → "Open" to bypass the unsigned developer warning.
+        Open **teaching and exploratory research** platform (Streamlit) for ordinal τ_s metrics, nested RECD levels, classical early-warning signals, surrogate nulls, and a multipage laboratory with reproducible exports. Languages: **Spanish · English · French**.
 
-        📖 Please read the **Quick Start Guide & User Manual** before your first analysis.
+        **Cite / DOI:** [10.5281/zenodo.21301571](https://doi.org/10.5281/zenodo.21301571)
 
-        **Links:**
-        - [GitHub Releases](https://github.com/johelpadilla/systemictau/releases) — Download the app (.dmg) and source code
-        - [Repository](https://github.com/johelpadilla/systemictau)
-        - [Documentation (USER_GUIDE)](https://github.com/johelpadilla/systemictau/blob/main/USER_GUIDE.md)
+        | Resource | Link |
+        |----------|------|
+        | Live app | [academylearningtau.streamlit.app](https://academylearningtau.streamlit.app) |
+        | Repository | [github.com/johelpadilla/academy-learning-tau](https://github.com/johelpadilla/academy-learning-tau) |
+        | Release v1.1.0 | [GitHub Releases](https://github.com/johelpadilla/academy-learning-tau/releases/tag/v1.1.0) |
+        | Zenodo | [doi.org/10.5281/zenodo.21301571](https://doi.org/10.5281/zenodo.21301571) |
+
+        **Modules:** Foundations · Mathematics · Domains · Laboratory · Learning path · Evidence · Teaching · Assessments · Library.
+
+        ---
+
+        ### 2. Systemic Tau — desktop application (macOS)
+
+        Native app for analysis with pre-processing, data-health layer (NaNs), signal smoothing, deterministic reports, and an academic-format kernel. Install from the `.dmg` on GitHub Releases.
+
+        | Resource | Link |
+        |----------|------|
+        | Releases (.dmg + source) | [github.com/johelpadilla/systemictau/releases](https://github.com/johelpadilla/systemictau/releases) |
+        | Repository | [github.com/johelpadilla/systemictau](https://github.com/johelpadilla/systemictau) |
+        | User guide | [USER_GUIDE.md](https://github.com/johelpadilla/systemictau/blob/main/USER_GUIDE.md) |
+
+        *macOS install:* open the `.dmg` → drag the app to Applications → on first launch, right-click → “Open” if the system warns about an unsigned developer.
+
+        ---
+
+        ### 3. excess³ — continuous proxy for order-3 dependence
+
+        Document family and code for a pre-specified proxy of order-3 synergistic surplus (methods + synthetic validation, Spanish introduction, cross-disciplinary guide).
+
+        | Resource | Link |
+        |----------|------|
+        | Repository | [github.com/johelpadilla/excess3](https://github.com/johelpadilla/excess3) |
+        | DOI | [10.5281/zenodo.21385937](https://doi.org/10.5281/zenodo.21385937) |
     design:
       columns: '1'
   - block: collection

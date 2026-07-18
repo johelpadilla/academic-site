@@ -41,16 +41,19 @@ hugo server -D
 
 ## 📦 Software & Tools
 
-### Systemic Tau Package
-**Python package** for implementing the Systemic Tau framework:
-- 📦 **PyPI**: [`systemictau`](https://pypi.org/project/systemictau/)
-- 📖 **Documentation**: [GitHub](https://github.com/johelpadilla/systemictau)
-- 🐍 **Version**: v2.x (PyPI) | v3.0+ (macOS app)
+### Academy Learning Tau (educational Streamlit platform)
+- 🌐 **Live**: [academylearningtau.streamlit.app](https://academylearningtau.streamlit.app)
+- 📦 **Repo**: [github.com/johelpadilla/academy-learning-tau](https://github.com/johelpadilla/academy-learning-tau)
+- 🔖 **DOI**: [10.5281/zenodo.21301571](https://doi.org/10.5281/zenodo.21301571) · v1.1.0
 
-### macOS Desktop Application
-**Systemic Tau v3.0** - Standalone application
-- 📥 Download: [GitHub Releases](https://github.com/johelpadilla/systemictau/releases)
-- 📋 User Guide: [Documentation](https://github.com/johelpadilla/systemictau/blob/main/USER_GUIDE.md)
+### Systemic Tau (Python package + macOS desktop)
+- 📦 **PyPI**: [`systemictau`](https://pypi.org/project/systemictau/)
+- 📥 **Desktop Releases**: [GitHub Releases](https://github.com/johelpadilla/systemictau/releases)
+- 📋 **User Guide**: [USER_GUIDE.md](https://github.com/johelpadilla/systemictau/blob/main/USER_GUIDE.md)
+
+### excess³
+- 📦 **Repo**: [github.com/johelpadilla/excess3](https://github.com/johelpadilla/excess3)
+- 🔖 **DOI**: [10.5281/zenodo.21385937](https://doi.org/10.5281/zenodo.21385937)
 
 ## 📄 Curriculum Vitae
 

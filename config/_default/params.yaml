@@ -19,9 +19,9 @@ hugoblox:
     # Schema.org type for structured data
     type: person # person | organization | local_business
     # Short tagline displayed on your site
-    tagline: "Systemic Tau (τ_s) • Reloj Extramental Discreto (RECD)"
+    tagline: "Systemic Tau (τ_s) • RECD • Academy Learning Tau • excess³"
     # Site meta description for search engines and social sharing
-    description: "Sitio académico de Dr. Johel Padilla-Villanueva, DrPH. Investigación sobre Systemic Tau (τ_s), el Reloj Extramental Discreto (RECD) y publicaciones científicas."
+    description: "Sitio académico de Dr. Johel Padilla-Villanueva, DrPH. Investigación sobre Systemic Tau (τ_s), RECD, Academy Learning Tau, excess³ y publicaciones abiertas en Zenodo."
     # Social accounts (used for meta tags like Twitter Cards)
     social:
       twitter: "mrjohelpadilla" # Twitter/X handle for Twitter Cards (without @)

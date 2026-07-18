@@ -15,9 +15,9 @@ role: "DrPH | Auxiliary Professor (UPR Carolina) & Adjunct Professor (UPR Medica
 bio: |
   Dr. Johel Padilla-Villanueva, DrPH is an independent researcher and university professor specializing in environmental health, vector-borne disease dynamics, and the development of novel theoretical frameworks in complex systems. His DrPH dissertation (UPR, 2022) examined the spatiotemporal dynamics of Aedes aegypti populations in the Caño Martín Peña area of San Juan, Puerto Rico.
 
-  His current research centers on Systemic Tau (τ_s) and the Discrete Extramental Clock Law (RECD / Ley del Reloj Extramental Discreto), integrating fractal analysis (D ≈ 1.98), ordinal renormalization, ontological emergence, Bayesian accumulation, and applications to early-warning systems for dengue and other complex public health phenomena. He also explores connections with philosophy of physics and synthesis across chaos theory, information theory, and non-Laplacian probability.
+  His current research centers on Systemic Tau (τ_s) and the Discrete Extramental Clock Law (RECD / Ley del Reloj Extramental Discreto), integrating fractal analysis (D ≈ 1.98), ordinal renormalization, ontological emergence, Bayesian accumulation, higher-order dependence (excess³), and applications to early-warning systems for dengue and other complex public health phenomena. He also explores connections with philosophy of physics and synthesis across chaos theory, information theory, and non-Laplacian probability.
 
-  Recent publications (2026) are available on Zenodo. The reference implementation is the native standalone macOS desktop application **Systemic Tau v3.0**. Open to interdisciplinary collaboration.
+  Recent publications (2026) are on Zenodo. Open software includes **Academy Learning Tau** (educational Streamlit platform; DOI 10.5281/zenodo.21301571) and the **Systemic Tau** desktop application for macOS. Open to interdisciplinary collaboration.
 
 affiliations:
   - name: "Auxiliary Professor, University of Puerto Rico at Carolina"
@@ -47,14 +47,22 @@ links:
     url: https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Padilla-Villanueva%2C+Johel%22
     label: Zenodo
   - icon: brands/github
+    url: https://github.com/johelpadilla
+    label: GitHub
+  - icon: brands/github
+    url: https://github.com/johelpadilla/academy-learning-tau
+    label: Academy Learning Tau
+  - icon: brands/github
     url: https://github.com/johelpadilla/systemictau
-    label: systemictau
+    label: Systemic Tau
 
 interests:
   - Systemic Tau (τ_s) and Discrete Extramental Clock Law (RECD)
   - Fractal Dimension, Ordinal Methods & Renormalization in Chaotic Systems
+  - excess³ and Higher-Order / Synergistic Dependence
   - Complex Systems, Ontological Emergence & Philosophy of Physics
   - Vector-borne Diseases & Early Warning Systems (Dengue, Aedes aegypti)
+  - Open Educational Software (Academy Learning Tau) & Reproducible Research
   - Environmental Health, Epidemiology & Public Health Data Analysis
   - Academic Publications & Open Science (Zenodo)
 
