@@ -38,7 +38,7 @@ sections:
       title: '📚 My Research'
       subtitle: ''
       text: |-
-        I develop conceptual frameworks in Systemic Tau (τ_s) and the Discrete Extramental Clock Law (RECD). I integrate fractal dimension analysis (D ≈ 1.98), ontological permeability, ordinal metrics, and discrete models for complex systems, with applications to early warning (dengue) and higher-order dependence proxies (excess³).
+        I develop conceptual frameworks in Systemic Tau (τ_s) and the Discrete Extramental Clock Law (RECD). I integrate fractal dimension analysis (D ≈ 1.98), ontological permeability, ordinal metrics, and discrete models for complex systems, with applications to early warning (dengue) and higher-order dependence proxies (excess³). In philosophy, I continue Polo’s project with the monograph *El acto de ser relacional-discreto*; the program synthesis is *Systemic Tau and the Discrete Architecture of Time* (2nd ed., ISBN 979-8-18776-367-2).
 
         Open software in this program includes the educational platform **[Academy Learning Tau](https://academylearningtau.streamlit.app)** (Streamlit; [DOI 10.5281/zenodo.21301571](https://doi.org/10.5281/zenodo.21301571)) and the **Systemic Tau** desktop application for macOS.
 

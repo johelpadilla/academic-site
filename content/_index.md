@@ -38,7 +38,7 @@ sections:
       title: '📚 Mi Investigación'
       subtitle: ''
       text: |-
-        Desarrollo marcos conceptuales en Systemic Tau (τ_s) y el Reloj Extramental Discreto (RECD). Integro análisis de dimensión fractal (D ≈ 1.98), permeabilidad ontológica, métricas ordinales y modelos discretos para sistemas complejos, con aplicaciones a alerta temprana (dengue) y a proxies de dependencia de orden superior (excess³).
+        Desarrollo marcos conceptuales en Systemic Tau (τ_s) y el Reloj Extramental Discreto (RECD). Integro análisis de dimensión fractal (D ≈ 1.98), permeabilidad ontológica, métricas ordinales y modelos discretos para sistemas complejos, con aplicaciones a alerta temprana (dengue) y a proxies de dependencia de orden superior (excess³). En filosofía, continúo el proyecto poliano con la monografía *El acto de ser relacional-discreto*; la síntesis de programa aparece en *Systemic Tau and the Discrete Architecture of Time* (2.ª ed., ISBN 979-8-18776-367-2).
 
         El software abierto del programa incluye la plataforma educativa **[Academy Learning Tau](https://academylearningtau.streamlit.app)** (Streamlit; [DOI 10.5281/zenodo.21301571](https://doi.org/10.5281/zenodo.21301571)) y la aplicación de escritorio **Systemic Tau** para macOS.
 
