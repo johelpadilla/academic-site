@@ -312,10 +312,17 @@ section p.text-xs {
   border-color: color-mix(in oklab, var(--color-primary-500, #1e40af) 35%, transparent) !important;
 }
 
-/* Hide “1 min de lectura” noise on short abstract stubs */
-#papers [role="article"] span.whitespace-nowrap,
-#papers [role="article"] .hidden.sm\:inline {
+/* Hide “1 min de lectura” on short abstract stubs */
+#papers span.whitespace-nowrap {
   display: none !important;
+}
+
+/* Quiet interest chips (override loud dark hover) */
+.hbb-section span.inline-block.rounded-full:hover,
+.hbb-section span.inline-block.bg-primary-50:hover {
+  background: color-mix(in oklab, var(--color-primary-500, #1e3a5f) 10%, transparent) !important;
+  color: inherit !important;
+  border-color: var(--tau-border) !important;
 }
 
 /* Tighten card body padding slightly */
