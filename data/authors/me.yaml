@@ -10,33 +10,25 @@ name:
 postnominals:
   - DrPH
 status:
-  icon: "τ"
-role: "DrPH · UPR Carolina & UPR-MSC · Systemic Tau / RECD"
+  icon: ""
+role: "Auxiliary Professor (UPR Carolina) · Adjunct (UPR Medical Sciences Campus) · Independent Researcher"
 bio: |
-  Dr. Johel Padilla-Villanueva, DrPH is an independent researcher and university professor specializing in environmental health, vector-borne disease dynamics, and the development of novel theoretical frameworks in complex systems. His DrPH dissertation (UPR, 2022) examined the spatiotemporal dynamics of Aedes aegypti populations in the Caño Martín Peña area of San Juan, Puerto Rico.
+  Independent researcher and university professor in environmental health, vector-borne disease dynamics, and theoretical frameworks for complex systems. His DrPH dissertation (UPR, 2022) examined the spatiotemporal dynamics of *Aedes aegypti* in the Caño Martín Peña area of San Juan, Puerto Rico.
 
-  His current research centers on Systemic Tau (τ_s) and the Discrete Extramental Clock Law (RECD / Ley del Reloj Extramental Discreto), integrating fractal analysis (D ≈ 1.98), ordinal renormalization, ontological emergence, Bayesian accumulation, higher-order dependence (excess³), and applications to early-warning systems for dengue and other complex public health phenomena. He also explores connections with philosophy of physics and synthesis across chaos theory, information theory, and non-Laplacian probability.
-
-  Recent work (2026) includes open Zenodo preprints, the monograph *Systemic Tau and the Discrete Architecture of Time* (2nd ed., ISBN 979-8-18776-367-2), and philosophical monographs on the *acto de ser relacional-discreto* in dialogue with Leonardo Polo. Open software includes **Academy Learning Tau** (Streamlit; DOI 10.5281/zenodo.21301571) and the **Systemic Tau** desktop app for macOS. Open to interdisciplinary collaboration.
+  Current work centers on Systemic Tau (τ_s) and the Discrete Extramental Clock (RECD): ordinal metrics, nested discrete time, higher-order dependence (excess³), and early-warning applications (including dengue). Open software includes Academy Learning Tau and Systemic Tau; monographs include *Systemic Tau and the Discrete Architecture of Time* (2nd ed.) and philosophical work on the *acto de ser relacional-discreto* in dialogue with Leonardo Polo.
 
 affiliations:
   - name: "Auxiliary Professor, University of Puerto Rico at Carolina"
     url: "https://www.upr.edu/"
   - name: "Adjunct Professor, Graduate School of Public Health, University of Puerto Rico Medical Sciences Campus"
     url: "https://www.upr.edu/"
-  - name: "Independent Researcher — Systemic Tau (τ_s) & Discrete Extramental Clock (RECD)"
+  - name: "Independent Researcher — Systemic Tau (τ_s) and RECD"
     url: ""
 
 links:
   - icon: at-symbol
     url: mailto:joel.padilla2@upr.edu
     label: joel.padilla2@upr.edu
-  - icon: at-symbol
-    url: mailto:johelpadilla@gmail.com
-    label: johelpadilla@gmail.com
-  - icon: brands/x
-    url: https://x.com/mrjohelpadilla
-    label: "@mrjohelpadilla"
   - icon: academicons/orcid
     url: https://orcid.org/0000-0002-5797-6931
     label: ORCID
@@ -49,23 +41,17 @@ links:
   - icon: brands/github
     url: https://github.com/johelpadilla
     label: GitHub
-  - icon: brands/github
-    url: https://github.com/johelpadilla/academy-learning-tau
-    label: Academy Learning Tau
-  - icon: brands/github
-    url: https://github.com/johelpadilla/systemictau
-    label: Systemic Tau
+  - icon: brands/x
+    url: https://x.com/mrjohelpadilla
+    label: "@mrjohelpadilla"
 
 interests:
-  - Systemic Tau (τ_s) and Discrete Extramental Clock Law (RECD)
-  - Fractal Dimension, Ordinal Methods & Renormalization in Chaotic Systems
-  - excess³ and Higher-Order / Synergistic Dependence
-  - Complex Systems, Ontological Emergence & Philosophy of Physics
-  - Leonardo Polo: acto de ser, persistir, tiempo extramental (física filosófica)
-  - Vector-borne Diseases & Early Warning Systems (Dengue, Aedes aegypti)
-  - Open Educational Software (Academy Learning Tau) & Reproducible Research
-  - Environmental Health, Epidemiology & Public Health Data Analysis
-  - Academic Publications & Open Science (Zenodo)
+  - "Systemic Tau (τ_s) and RECD"
+  - "Ordinal methods, renormalization, and complex systems"
+  - "excess³ and higher-order dependence"
+  - "Dengue early warning and environmental health"
+  - "Philosophy of physics and Leonardo Polo"
+  - "Open educational software and reproducible research"
 
 education:
   - degree: "DrPH (Doctor of Public Health) — Environmental Health"

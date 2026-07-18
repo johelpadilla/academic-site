@@ -1,43 +1,43 @@
-# Custom theme — Tau Nexus
-# Discrete-time academic identity: ink, copper, and clock-teal.
+# Tau Nexus — restrained academic palette
+# One calm primary; secondary close in hue (not copper/gold clash).
 
 hugoblox:
   meta:
     format: "hugoblox-theme@1"
     name: "Tau Nexus"
     vendor: "johelpadilla"
-    version: "1.0.0"
+    version: "1.1.0"
     license: "MIT"
-    description: "Deep ink + copper + teal — Systemic Tau / RECD academic identity"
+    description: "Quiet ink and blue — academic, not marketing"
 
   type: "dual"
 
   light:
     colors:
-      primary: "#1d4ed8"   # blue-700 — clear academic signal
-      secondary: "#b45309" # amber-700 — copper / philosophical warmth
+      primary: "#1e3a5f"   # deep academic blue-ink
+      secondary: "#475569" # slate-600 — supporting, not competing
       neutral: "slate"
     surfaces:
-      background: "#f7f5f1" # warm paper
-      foreground: "#0f172a" # slate-900
+      background: "#fafaf9" # near-white warm
+      foreground: "#0f172a"
       header:
-        background: "rgba(255, 255, 255, 0.82)"
+        background: "rgba(250, 250, 249, 0.92)"
         foreground: "#0f172a"
       footer:
-        background: "#0f172a"
-        foreground: "#e2e8f0"
+        background: "#f1f5f9"
+        foreground: "#334155"
 
   dark:
     colors:
-      primary: "#38bdf8"   # sky-400 — luminous clock face
-      secondary: "#fbbf24" # amber-400 — gold tick
+      primary: "#93c5fd"   # soft blue
+      secondary: "#94a3b8" # muted slate
       neutral: "slate"
     surfaces:
-      background: "#070b14" # near-void ink
-      foreground: "#e8eef9"
+      background: "#0c111b"
+      foreground: "#e8eef7"
       header:
-        background: "rgba(7, 11, 20, 0.78)"
+        background: "rgba(12, 17, 27, 0.9)"
         foreground: "#f8fafc"
       footer:
-        background: "#030712"
+        background: "#080c14"
         foreground: "#94a3b8"

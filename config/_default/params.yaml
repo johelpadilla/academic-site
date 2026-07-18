@@ -19,9 +19,9 @@ hugoblox:
     # Schema.org type for structured data
     type: person # person | organization | local_business
     # Short tagline displayed on your site
-    tagline: "Systemic Tau · RECD · Discrete Time"
+    tagline: "Systemic Tau and RECD"
     # Site meta description for search engines and social sharing
-    description: "Sitio académico de Dr. Johel Padilla-Villanueva, DrPH — Systemic Tau (τ_s), RECD, Academy Learning Tau, excess³ y monografías abiertas."
+    description: "Academic site of Dr. Johel Padilla-Villanueva, DrPH — Systemic Tau, RECD, open software, and monographs."
     # Social accounts (used for meta tags like Twitter Cards)
     social:
       twitter: "mrjohelpadilla" # Twitter/X handle for Twitter Cards (without @)
@@ -68,9 +68,9 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   layout:
     # Border radius: 'none', 'sm', 'md', 'lg', or 'full'
-    radius: "lg"
+    radius: "md"
     # Spacing density: 'compact', 'comfortable', or 'spacious'
-    spacing: "spacious"
+    spacing: "comfortable"
     # Avatar shape in author profiles
     avatar_shape: circle # circle | square | rounded
 
@@ -94,7 +94,7 @@ hugoblox:
     # Call-to-action button
     cta:
       enable: true
-      text: "Academy τ"
+      text: "Academy Learning Tau"
       url: "https://academylearningtau.streamlit.app"
 
   # ────────────────────────────────────────────────────────────────────────────
@@ -106,7 +106,7 @@ hugoblox:
     style: minimal # minimal | columns
     language_switcher: true
     # Custom footer text (HTML supported)
-    text: 'τ<sub>s</sub> · RECD · tiempo extramental · ciencia abierta · <a href="https://orcid.org/0000-0002-5797-6931">ORCID</a>'
+    text: '<a href="https://orcid.org/0000-0002-5797-6931">ORCID</a> · <a href="https://github.com/johelpadilla">GitHub</a> · <a href="mailto:joel.padilla2@upr.edu">Contact</a>'
 
   # ────────────────────────────────────────────────────────────────────────────
   # COPYRIGHT
@@ -161,7 +161,7 @@ hugoblox:
       enable: true
     # Reading time estimates
     reading_time:
-      enable: true
+      enable: false
     # Academic citations
     citations:
       style: apa # apa | mla | chicago | ieee

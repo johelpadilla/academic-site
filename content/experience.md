@@ -8,13 +8,6 @@ design:
   spacing: '4rem'
 
 sections:
-  - block: markdown
-    content:
-      title: ''
-      text: |-
-        Trayectoria en **salud ambiental**, epidemiología de vectores y el programa de investigación **Systemic Tau / RECD**.
-    design:
-      columns: '1'
   - block: resume-experience
     content:
       username: me
@@ -23,14 +16,14 @@ sections:
       is_education_first: false
   - block: resume-skills
     content:
-      title: Competencias
+      title: Skills
       username: me
   - block: resume-awards
     content:
-      title: Reconocimientos
+      title: Awards
       username: me
   - block: resume-languages
     content:
-      title: Idiomas
+      title: Languages
       username: me
 ---

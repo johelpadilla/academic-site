@@ -15,5 +15,5 @@ links:
     url: "https://doi.org/10.5281/zenodo.20740192"
 summary: "Three-layer ontological framework for dengue early warning using joint episodes."
 tags: ["Dengue", "Early Warning", "Joint Episodes", "Public Health", "Tau Sistémico"]
-featured: true
+featured: false
 ---

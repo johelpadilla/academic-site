@@ -1,26 +1,15 @@
 /* ═══════════════════════════════════════════════════════════════════════════
-   Tau Nexus — site design system
-   Academic identity for Systemic Tau / RECD / Academy Learning Tau
+   Tau site polish — restrained academic UI
+   Prefer quiet hierarchy over marketing chrome.
    ═══════════════════════════════════════════════════════════════════════════ */
 
 :root {
-  --tau-radius: 1rem;
-  --tau-radius-lg: 1.35rem;
-  --tau-shadow: 0 1px 2px rgb(15 23 42 / 0.04), 0 12px 32px -12px rgb(15 23 42 / 0.18);
-  --tau-shadow-hover: 0 4px 12px rgb(15 23 42 / 0.08), 0 24px 48px -16px rgb(29 78 216 / 0.28);
-  --tau-ring: 0 0 0 1px rgb(15 23 42 / 0.06);
-  --tau-glow: 0 0 0 1px rgb(56 189 248 / 0.25), 0 0 40px -8px rgb(56 189 248 / 0.45);
   --tau-ease: cubic-bezier(0.22, 1, 0.36, 1);
-  --tau-max: 72rem;
+  --tau-border: color-mix(in oklab, currentColor 10%, transparent);
+  --tau-muted: color-mix(in oklab, currentColor 62%, transparent);
+  --tau-surface: color-mix(in oklab, currentColor 3.5%, transparent);
+  --tau-radius: 0.65rem;
 }
-
-.dark {
-  --tau-shadow: 0 1px 2px rgb(0 0 0 / 0.35), 0 16px 40px -12px rgb(0 0 0 / 0.55);
-  --tau-shadow-hover: 0 8px 24px rgb(0 0 0 / 0.4), 0 0 0 1px rgb(56 189 248 / 0.2);
-  --tau-ring: 0 0 0 1px rgb(255 255 255 / 0.06);
-}
-
-/* ── Base polish ─────────────────────────────────────────────────────────── */
 
 html {
   scroll-behavior: smooth;
@@ -39,466 +28,354 @@ html {
   }
 }
 
-::selection {
-  background: color-mix(in oklab, var(--color-primary-500, #1d4ed8) 28%, transparent);
-  color: inherit;
-}
-
 body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Subtle paper grain (light) / void depth (dark) */
-body::before {
-  content: "";
-  pointer-events: none;
-  position: fixed;
-  inset: 0;
-  z-index: 0;
-  opacity: 0.035;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+::selection {
+  background: color-mix(in oklab, var(--color-primary-500, #1e40af) 22%, transparent);
 }
 
-.dark body::before {
-  opacity: 0.07;
-}
-
-/* ── Header / navbar glass ───────────────────────────────────────────────── */
+/* ── Header: quiet bar, no rainbow strip ─────────────────────────────────── */
 
 header.sticky,
 .navbar,
-nav[data-hb-header],
 #navbar-main,
 .hb-header {
-  backdrop-filter: blur(16px) saturate(1.2);
-  -webkit-backdrop-filter: blur(16px) saturate(1.2);
-  border-bottom: 1px solid color-mix(in oklab, currentColor 8%, transparent);
-  transition: box-shadow 0.35s var(--tau-ease), border-color 0.35s var(--tau-ease);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--tau-border);
 }
 
 .navbar-brand,
 .navbar-brand a {
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
   font-weight: 600;
+  font-size: 0.95rem;
 }
 
-/* Nav links */
 .navbar .nav-link,
 #nav-menu a {
-  position: relative;
-  font-size: 0.92rem;
+  font-size: 0.9rem;
   font-weight: 500;
-  letter-spacing: 0.01em;
-  transition: color 0.2s var(--tau-ease);
+  opacity: 0.88;
+  transition: opacity 0.15s var(--tau-ease), color 0.15s var(--tau-ease);
 }
 
 .navbar .nav-link:hover,
 #nav-menu a:hover {
-  color: var(--color-primary-600, #1d4ed8);
+  opacity: 1;
 }
 
-.dark .navbar .nav-link:hover,
-.dark #nav-menu a:hover {
-  color: var(--color-primary-400, #38bdf8);
+/* Soften CTA so it does not dominate the nav */
+header a[href*="academylearningtau"],
+.navbar a[href*="academylearningtau"] {
+  font-weight: 500 !important;
+  font-size: 0.85rem !important;
+  border-radius: 0.4rem !important;
+  padding-inline: 0.75rem !important;
 }
 
-/* ── Section rhythm ──────────────────────────────────────────────────────── */
+/* ── Hero / biography ────────────────────────────────────────────────────── */
 
-.hbb-section,
-section.hbb-section {
+.hbb-section {
   position: relative;
   z-index: 1;
 }
 
-/* Section titles — editorial underline accent */
-.hbb-section h2,
-.prose h2,
-section h2 {
-  letter-spacing: -0.03em;
-}
-
-#research .prose h1,
-#research h2,
-#software h2,
-#pillars h2,
-#papers h2,
-section#research .text-3xl,
-section#software .text-3xl {
-  position: relative;
-}
-
-/* ── Biography / hero ────────────────────────────────────────────────────── */
-
-/* Avatar: gradient ring + soft lift */
+/* Single quiet avatar ring — no double copper/blue halo */
 img[alt*="Padilla"],
 .avatar img,
-.hbb-section img.rounded-full,
-img.rounded-full {
-  box-shadow:
-    0 0 0 3px color-mix(in oklab, var(--color-primary-500, #1d4ed8) 35%, transparent),
-    0 0 0 6px color-mix(in oklab, var(--color-secondary-500, #b45309) 18%, transparent),
-    var(--tau-shadow);
+.hbb-section img.rounded-full {
+  box-shadow: 0 0 0 1px var(--tau-border), 0 8px 24px -12px rgb(15 23 42 / 0.25);
 }
 
-/* CTA button under bio */
-.hbb-section a[href*="resume"],
-.hbb-section a.btn,
-a.inline-flex[href*="resume"] {
-  border-radius: 9999px !important;
-  font-weight: 600 !important;
-  letter-spacing: 0.01em;
-  box-shadow: var(--tau-shadow);
-  transition: transform 0.25s var(--tau-ease), box-shadow 0.25s var(--tau-ease) !important;
+/* Interests / chips: calm pills */
+.hbb-section .rounded-full,
+.hbb-section span.inline-flex {
+  font-weight: 500;
 }
 
-.hbb-section a[href*="resume"]:hover,
-a.inline-flex[href*="resume"]:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--tau-shadow-hover);
+/* CV button: less “app pill” */
+a[href*="resume.pdf"] {
+  border-radius: 0.45rem !important;
+  font-weight: 550 !important;
+  box-shadow: none !important;
 }
 
-/* ── Markdown / research / software panels ───────────────────────────────── */
-
-#research .prose,
-#software .prose,
-section#research .max-w-prose,
-section#software .max-w-prose,
-#research > div > div,
-#software > div > div {
-  /* soft card envelope when theme wraps content tightly */
+a[href*="resume.pdf"]:hover {
+  transform: none !important;
 }
 
-/* Elevate prose containers in research + software */
+/* Tone down gradient mesh if present */
+[class*="gradient-mesh"],
+.home-section-bg {
+  opacity: 0.55;
+}
+
+/* ── Section titles ──────────────────────────────────────────────────────── */
+
+.hbb-section h2,
+section .text-3xl,
+section .text-4xl {
+  letter-spacing: -0.025em;
+  font-weight: 650;
+}
+
+/* Subtitles quieter */
+section .text-xs.uppercase,
+section p.text-xs {
+  letter-spacing: 0.08em;
+  opacity: 0.75;
+}
+
+/* ── Research prose ──────────────────────────────────────────────────────── */
+
 #research .prose,
 #software .prose {
-  max-width: 48rem;
+  max-width: 42rem;
 }
 
 #research .prose p,
 #software .prose p {
-  font-size: 1.05rem;
+  font-size: 1.02rem;
+  line-height: 1.75;
+  color: inherit;
 }
 
-#software .prose table,
-#research .prose table,
-.prose table {
-  display: block;
-  width: 100%;
-  overflow-x: auto;
-  border-collapse: separate;
-  border-spacing: 0;
-  border-radius: var(--tau-radius);
-  box-shadow: var(--tau-ring), var(--tau-shadow);
-  margin: 1.5rem 0 !important;
-}
-
-#software .prose th,
-#research .prose th,
-.prose th {
-  background: color-mix(in oklab, var(--color-primary-500, #1d4ed8) 10%, transparent);
-  font-weight: 600;
-  text-align: left;
-  padding: 0.75rem 1rem !important;
-}
-
-#software .prose td,
-#research .prose td,
-.prose td {
-  padding: 0.7rem 1rem !important;
-  border-top: 1px solid color-mix(in oklab, currentColor 8%, transparent);
-}
-
-#software .prose hr,
-#research .prose hr {
-  border: none;
-  height: 1px;
-  margin: 2rem 0;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    color-mix(in oklab, var(--color-primary-500, #1d4ed8) 45%, transparent),
-    color-mix(in oklab, var(--color-secondary-500, #b45309) 45%, transparent),
-    transparent
-  );
-}
-
-#software .prose h3,
-#research .prose h3 {
-  margin-top: 2rem;
-  font-size: 1.25rem;
-  letter-spacing: -0.02em;
-}
-
-/* Inline code / DOI chips */
-.prose code {
-  border-radius: 0.4rem;
-  padding: 0.12rem 0.4rem;
-  font-size: 0.88em;
-  background: color-mix(in oklab, var(--color-primary-500, #1d4ed8) 10%, transparent);
-}
-
-/* Links with subtle underline animation */
 .prose a {
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.18em;
-  transition: color 0.2s var(--tau-ease), text-decoration-color 0.2s var(--tau-ease);
+  text-underline-offset: 0.15em;
+  text-decoration-thickness: from-font;
 }
 
-/* ── Software “product cards” via markdown structure ─────────────────────── */
+.prose code {
+  border-radius: 0.3rem;
+  padding: 0.08rem 0.35rem;
+  font-size: 0.88em;
+  background: var(--tau-surface);
+}
+
+/* ── Software cards: editorial, not SaaS ─────────────────────────────────── */
 
 .tau-product-grid {
   display: grid;
-  gap: 1.25rem;
+  gap: 0;
   grid-template-columns: 1fr;
-  margin: 1.5rem 0 0.5rem;
+  margin: 0.5rem 0 0;
+  border: 1px solid var(--tau-border);
+  border-radius: var(--tau-radius);
+  overflow: hidden;
+  background: color-mix(in oklab, white 70%, transparent);
 }
 
-@media (min-width: 768px) {
+.dark .tau-product-grid {
+  background: color-mix(in oklab, #0b1220 75%, transparent);
+}
+
+@media (min-width: 900px) {
   .tau-product-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 .tau-product-card {
-  position: relative;
   display: flex;
   flex-direction: column;
-  gap: 0.65rem;
-  padding: 1.35rem 1.4rem 1.45rem;
-  border-radius: var(--tau-radius-lg);
-  background: color-mix(in oklab, white 88%, transparent);
-  box-shadow: var(--tau-ring), var(--tau-shadow);
-  transition: transform 0.35s var(--tau-ease), box-shadow 0.35s var(--tau-ease);
-  overflow: hidden;
+  gap: 0.55rem;
+  padding: 1.35rem 1.4rem 1.5rem;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  transition: background 0.2s var(--tau-ease);
 }
 
-.dark .tau-product-card {
-  background: color-mix(in oklab, #0f172a 82%, transparent);
+@media (min-width: 900px) {
+  .tau-product-card + .tau-product-card {
+    border-left: 1px solid var(--tau-border);
+  }
+}
+
+@media (max-width: 899px) {
+  .tau-product-card + .tau-product-card {
+    border-top: 1px solid var(--tau-border);
+  }
 }
 
 .tau-product-card::before {
-  content: "";
-  position: absolute;
-  inset: 0 0 auto 0;
-  height: 3px;
-  background: linear-gradient(
-    90deg,
-    var(--color-primary-500, #1d4ed8),
-    var(--color-secondary-500, #b45309)
-  );
+  display: none;
 }
 
 .tau-product-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--tau-shadow-hover);
+  transform: none;
+  box-shadow: none;
+  background: var(--tau-surface);
 }
 
 .tau-product-card .tau-kicker {
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--color-primary-600, #1d4ed8);
-}
-
-.dark .tau-product-card .tau-kicker {
-  color: var(--color-primary-400, #38bdf8);
+  opacity: 0.65;
+  color: inherit;
 }
 
 .tau-product-card h3 {
   margin: 0 !important;
-  font-size: 1.15rem !important;
+  font-size: 1.1rem !important;
   line-height: 1.3;
   letter-spacing: -0.02em;
+  font-weight: 650;
 }
 
 .tau-product-card p {
   margin: 0 !important;
-  font-size: 0.95rem !important;
-  opacity: 0.88;
+  font-size: 0.93rem !important;
+  line-height: 1.55;
+  opacity: 0.82;
   flex: 1;
 }
 
 .tau-product-card .tau-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 0.35rem;
+  gap: 0.85rem 1rem;
+  margin-top: 0.45rem;
 }
 
 .tau-product-card .tau-links a {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.25rem;
-  font-size: 0.8rem;
-  font-weight: 600;
-  padding: 0.35rem 0.7rem;
-  border-radius: 9999px;
-  text-decoration: none !important;
-  background: color-mix(in oklab, var(--color-primary-500, #1d4ed8) 12%, transparent);
-  color: inherit;
-  transition: background 0.2s var(--tau-ease), transform 0.2s var(--tau-ease);
+  display: inline;
+  font-size: 0.86rem;
+  font-weight: 550;
+  padding: 0;
+  border-radius: 0;
+  text-decoration: underline !important;
+  text-underline-offset: 0.18em;
+  background: transparent !important;
+  opacity: 0.9;
 }
 
 .tau-product-card .tau-links a:hover {
-  background: color-mix(in oklab, var(--color-primary-500, #1d4ed8) 22%, transparent);
-  transform: translateY(-1px);
+  transform: none;
+  opacity: 1;
+  background: transparent !important;
 }
 
-/* ── Publication cards / collection ──────────────────────────────────────── */
+/* ── Stats: strip card chrome ────────────────────────────────────────────── */
 
-.article-card,
-.card-simple,
-.stream-item,
-.view-card,
-.card,
-a.card,
-div[class*="article"] {
-  transition: transform 0.3s var(--tau-ease), box-shadow 0.3s var(--tau-ease);
+#impact .stats-item,
+#impact [class*="rounded-2xl"] {
+  box-shadow: none !important;
 }
 
-/* Citation list */
-.pub-list-item,
-.media.stream-item,
-li.pub-row {
-  border-radius: 0.75rem;
-  padding: 0.85rem 1rem !important;
-  margin-bottom: 0.5rem;
-  transition: background 0.2s var(--tau-ease);
+/* ── Features / pillars: calmer cards ────────────────────────────────────── */
+
+#pillars [class*="ring-1"],
+#pillars .rounded-2xl {
+  box-shadow: none !important;
 }
 
-.pub-list-item:hover,
-.media.stream-item:hover {
-  background: color-mix(in oklab, var(--color-primary-500, #1d4ed8) 6%, transparent);
+#pillars .rounded-2xl:hover {
+  transform: none !important;
+  box-shadow: none !important;
 }
 
-/* Tags / chips */
-.badge,
-.article-tags a,
-span.badge,
-a.label {
-  border-radius: 9999px !important;
-  font-weight: 500;
-  letter-spacing: 0.02em;
+/* ── Featured publication cards ──────────────────────────────────────────── */
+
+/* Hide empty cover placeholders (no real featured images) */
+#papers [role="article"] > div.relative.overflow-hidden.aspect-\[16\/9\],
+#papers [role="article"] .aspect-\[16\/9\] {
+  display: none !important;
 }
 
-/* ── Stats + features blocks ─────────────────────────────────────────────── */
+/* Quieter cards */
+#papers [role="article"],
+#papers .group {
+  box-shadow: none !important;
+  border: 1px solid var(--tau-border) !important;
+  border-radius: var(--tau-radius) !important;
+  background: color-mix(in oklab, white 78%, transparent) !important;
+  transform: none !important;
+}
 
-.stats-item,
-[class*="stats"] .rounded-2xl,
-[class*="FeatureCard"] {
-  transition: transform 0.3s var(--tau-ease), box-shadow 0.3s var(--tau-ease);
+.dark #papers [role="article"],
+.dark #papers .group {
+  background: color-mix(in oklab, #0b1220 80%, transparent) !important;
+}
+
+#papers [role="article"]:hover,
+#papers .group:hover {
+  transform: none !important;
+  box-shadow: none !important;
+  border-color: color-mix(in oklab, var(--color-primary-500, #1e40af) 35%, transparent) !important;
+}
+
+/* Hide “1 min de lectura” noise on short abstract stubs */
+#papers [role="article"] span.whitespace-nowrap,
+#papers [role="article"] .hidden.sm\:inline {
+  display: none !important;
+}
+
+/* Tighten card body padding slightly */
+#papers [role="article"] > div.p-8 {
+  padding: 1.25rem 1.35rem !important;
+}
+
+/* ── Citation catalog ────────────────────────────────────────────────────── */
+
+#papers ~ section .pub-list-item,
+section .media.stream-item {
+  border-radius: 0.4rem;
+  padding: 0.7rem 0.85rem !important;
 }
 
 /* ── Footer ──────────────────────────────────────────────────────────────── */
 
 footer {
-  position: relative;
-  z-index: 1;
-  border-top: 1px solid color-mix(in oklab, currentColor 10%, transparent);
+  border-top: 1px solid var(--tau-border);
+  font-size: 0.9rem;
 }
 
 footer a {
-  transition: color 0.2s var(--tau-ease);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
 }
 
-/* ── Focus accessibility ─────────────────────────────────────────────────── */
+/* ── Focus ───────────────────────────────────────────────────────────────── */
 
 :focus-visible {
-  outline: 2px solid var(--color-primary-500, #1d4ed8);
-  outline-offset: 3px;
-  border-radius: 0.25rem;
+  outline: 2px solid var(--color-primary-600, #1e40af);
+  outline-offset: 2px;
 }
 
-/* ── Custom scrollbar ────────────────────────────────────────────────────── */
-
-@media (pointer: fine) {
-  ::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-  }
-  ::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: color-mix(in oklab, currentColor 22%, transparent);
-    border-radius: 9999px;
-    border: 2px solid transparent;
-    background-clip: padding-box;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: color-mix(in oklab, currentColor 38%, transparent);
-    background-clip: padding-box;
-  }
-}
-
-/* ── Discrete “clock tick” accent bar at page top ────────────────────────── */
-
-body > header::after,
-.hb-header::after {
-  content: "";
-  display: block;
-  height: 2px;
-  width: 100%;
-  background: linear-gradient(
-    90deg,
-    var(--color-primary-500, #1d4ed8) 0%,
-    var(--color-secondary-500, #b45309) 45%,
-    var(--color-primary-400, #38bdf8) 100%
-  );
-  opacity: 0.85;
-}
-
-/* ── Experience page polish ──────────────────────────────────────────────── */
-
-.timeline,
-.resume-timeline,
-.experience-item {
-  border-radius: var(--tau-radius);
-}
-
-/* ── Page content max-width comfort ──────────────────────────────────────── */
-
-main,
-.page-body,
-.universal-wrapper {
-  position: relative;
-  z-index: 1;
-}
-
-/* ── Soft section banding for visual rhythm ─────────────────────────────── */
+/* ── Scroll anchors ──────────────────────────────────────────────────────── */
 
 #pillars,
 #software,
-#papers {
-  scroll-margin-top: 5rem;
-}
-
+#papers,
 #research,
-#software {
+#impact {
   scroll-margin-top: 5rem;
 }
 
-/* Alternate subtle wash for software section */
-#software {
-  background:
-    radial-gradient(ellipse 80% 60% at 10% 0%, color-mix(in oklab, var(--color-primary-500, #1d4ed8) 12%, transparent), transparent 60%),
-    radial-gradient(ellipse 60% 50% at 90% 100%, color-mix(in oklab, var(--color-secondary-500, #b45309) 10%, transparent), transparent 55%);
+/* No section rainbow washes */
+#software,
+#papers {
+  background: transparent;
 }
 
-#papers {
-  background:
-    radial-gradient(ellipse 70% 50% at 50% 0%, color-mix(in oklab, var(--color-primary-500, #1d4ed8) 8%, transparent), transparent 60%);
+/* ── Experience ──────────────────────────────────────────────────────────── */
+
+.timeline,
+.resume-timeline {
+  border-radius: var(--tau-radius);
 }
 
 /* ── Print ───────────────────────────────────────────────────────────────── */
 
 @media print {
-  body::before {
-    display: none;
-  }
   header,
   footer,
   .theme-toggle,

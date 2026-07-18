@@ -21,85 +21,72 @@ sections:
         gradient_mesh:
           enable: true
           style: orbs
-          animation: pulse
-          intensity: medium
-          orb_count: 3
+          animation: none
+          intensity: subtle
+          orb_count: 2
           colors:
-            - "primary-500/25"
-            - "secondary-500/20"
-            - "primary-400/15"
+            - "primary-500/10"
+            - "secondary-500/8"
       name:
-        size: lg
+        size: md
       avatar:
-        size: large
+        size: medium
         shape: circle
 
   - block: stats
     id: impact
     content:
-      title: 'Research program'
-      text: 'Open metrics from the 2022–2026 corpus'
+      title: ''
+      text: ''
       items:
         - statistic: "20+"
-          description: Publications and preprints on Zenodo / site
-          sub_metric: Open access · citable DOIs
+          description: Publications and preprints
           icon: hero/document-text
         - statistic: "3"
           description: Open software products
-          sub_metric: Academy · Systemic Tau · excess³
           icon: hero/code-bracket
         - statistic: "2"
-          description: Synthesis monographs (2026)
-          sub_metric: Tau 2nd ed. · Act of being
+          description: Monographs (2026)
           icon: hero/book-open
         - statistic: "ES · EN · FR"
           description: Multilingual pedagogy
-          sub_metric: Academy Learning Tau
           icon: hero/language
     design:
-      layout: cards
+      layout: minimal
 
   - block: features
     id: pillars
     content:
-      title: 'Program pillars'
-      subtitle: 'Theory · software · teaching · philosophy'
-      text: 'One thread: extramental time, ordinal metrics, and open science.'
+      title: 'Program lines'
+      subtitle: ''
+      text: ''
       items:
         - name: 'Systemic Tau (τ_s)'
           description: 'Ordinal observable of reorganization in complex series; relational coupling beyond univariate amplitude.'
           icon: hero/chart-bar
         - name: 'RECD'
-          description: 'Discrete Extramental Clock: nested levels Φ₁–Φ₃, conjunctions, and intrinsic process timing.'
+          description: 'Discrete Extramental Clock: nested levels Φ₁–Φ₃ and intrinsic process timing.'
           icon: hero/clock
         - name: 'excess³ / Φ₃'
-          description: 'Pre-specified proxy for order-3 synergistic surplus, with nulls and synthetic validation.'
+          description: 'Pre-specified proxy for order-3 dependence, with nulls and synthetic validation.'
           icon: hero/cube-transparent
-        - name: 'Early warning'
-          description: 'Applications to dengue and public-health phenomena with dual reading (τ_s + classical EWS).'
-          icon: hero/shield-check
-        - name: 'Open software'
-          description: 'Academy Learning Tau (web), Systemic Tau (macOS), and citable repositories with DOI.'
-          icon: hero/command-line
-        - name: 'Polian philosophy'
-          description: 'Relational-discrete act of being: persisting, physis, and void in continuity with Leonardo Polo.'
+        - name: 'Applications and teaching'
+          description: 'Early warning (dengue), open software, and monographs in dialogue with philosophy of physics.'
           icon: hero/academic-cap
     design:
-      layout: bento
+      layout: grid
 
   - block: markdown
     id: research
     content:
       title: 'Research'
-      subtitle: 'Frameworks, synthesis, and open access'
+      subtitle: ''
       text: |-
-        I develop conceptual frameworks in **Systemic Tau (τ_s)** and the **Discrete Extramental Clock (RECD)**. I integrate fractal dimension (D ≈ 1.98), ontological permeability, ordinal metrics, and discrete models for complex systems — with applications to early warning (dengue) and higher-order dependence proxies (**excess³**).
+        Work on **Systemic Tau (τ_s)** and the **Discrete Extramental Clock (RECD)**: ordinal metrics, discrete extramental time, and models for complex systems, with applications to early warning and **excess³**. In philosophy, I continue Polo’s project with *El acto de ser relacional-discreto*. The program synthesis is *Systemic Tau and the Discrete Architecture of Time* (2nd ed., ISBN 979-8-18776-367-2).
 
-        In philosophy, I continue Polo’s project with *El acto de ser relacional-discreto*. The program synthesis is *Systemic Tau and the Discrete Architecture of Time* (2nd ed., ISBN 979-8-18776-367-2).
+        [Publications](publications/) · [BibTeX](uploads/BibTeX_Clean_2026.bib) · [CV](uploads/resume.pdf) · [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Padilla-Villanueva%2C+Johel%22)
 
-        [Publications](publications/) · [BibTeX](uploads/BibTeX_Clean_2026.bib) · [CV (PDF)](uploads/resume.pdf) · [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Padilla-Villanueva%2C+Johel%22)
-
-        **Collaboration:** [joel.padilla2@upr.edu](mailto:joel.padilla2@upr.edu) · [johelpadilla@gmail.com](mailto:johelpadilla@gmail.com)
+        Contact: [joel.padilla2@upr.edu](mailto:joel.padilla2@upr.edu)
     design:
       columns: '1'
 
@@ -107,36 +94,35 @@ sections:
     id: software
     content:
       title: 'Software'
-      subtitle: 'Open implementations of the paradigm'
+      subtitle: ''
       text: |-
         <div class="tau-product-grid">
           <div class="tau-product-card">
-            <span class="tau-kicker">Education · Web</span>
-            <h3>Academy Learning Tau v1.1</h3>
-            <p>Streamlit platform for teaching and exploratory research: τ_s, RECD, EWS, surrogates, assessments, and library. ES · EN · FR.</p>
+            <span class="tau-kicker">Web · teaching</span>
+            <h3>Academy Learning Tau</h3>
+            <p>Streamlit platform (v1.1) for τ_s, RECD, EWS, and a reproducible laboratory. ES · EN · FR.</p>
             <div class="tau-links">
-              <a href="https://academylearningtau.streamlit.app">Live app</a>
+              <a href="https://academylearningtau.streamlit.app">App</a>
               <a href="https://doi.org/10.5281/zenodo.21301571">DOI</a>
-              <a href="https://github.com/johelpadilla/academy-learning-tau">GitHub</a>
+              <a href="https://github.com/johelpadilla/academy-learning-tau">Code</a>
             </div>
           </div>
           <div class="tau-product-card">
-            <span class="tau-kicker">Desktop · macOS</span>
+            <span class="tau-kicker">macOS</span>
             <h3>Systemic Tau</h3>
-            <p>Native app for analysis, data-health layer, smoothing, deterministic reports, and academic-format kernel.</p>
+            <p>Desktop app for analysis, reporting, and an academic-format kernel.</p>
             <div class="tau-links">
-              <a href="https://github.com/johelpadilla/systemictau/releases">Releases</a>
-              <a href="https://github.com/johelpadilla/systemictau">Repository</a>
-              <a href="https://github.com/johelpadilla/systemictau/blob/main/USER_GUIDE.md">Guide</a>
+              <a href="https://github.com/johelpadilla/systemictau/releases">Downloads</a>
+              <a href="https://github.com/johelpadilla/systemictau">Code</a>
             </div>
           </div>
           <div class="tau-product-card">
-            <span class="tau-kicker">Methods · Zenodo</span>
+            <span class="tau-kicker">Methods</span>
             <h3>excess³</h3>
-            <p>Continuous proxy for order-3 dependence: methods, Spanish intro, and cross-disciplinary guide with synthetic validation.</p>
+            <p>Order-3 proxy: methods, Spanish introduction, and cross-disciplinary guide.</p>
             <div class="tau-links">
               <a href="https://doi.org/10.5281/zenodo.21385937">DOI</a>
-              <a href="https://github.com/johelpadilla/excess3">GitHub</a>
+              <a href="https://github.com/johelpadilla/excess3">Code</a>
             </div>
           </div>
         </div>
@@ -146,7 +132,7 @@ sections:
   - block: collection
     id: papers
     content:
-      title: 'Featured'
+      title: 'Featured publications'
       filters:
         folders:
           - publications
@@ -157,8 +143,8 @@ sections:
 
   - block: collection
     content:
-      title: 'Publication catalog'
-      text: 'Full list in citation format.'
+      title: 'Catalog'
+      text: ''
       filters:
         folders:
           - publications

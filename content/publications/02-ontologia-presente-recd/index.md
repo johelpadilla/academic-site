@@ -15,5 +15,5 @@ links:
     url: "https://doi.org/10.5281/zenodo.20711393"
 summary: "Ontología del presente, RECD, persistencia intensificada y fragmentación en sistemas complejos."
 tags: ["RECD", "Ontología", "Sistemas Complejos", "Tau Sistémico"]
-featured: true
+featured: false
 ---
