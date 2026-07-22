@@ -16,6 +16,8 @@ hugoblox:
     doi: "10.5281/zenodo.20619058"
 
 links:
+  - type: doi
+    url: "https://doi.org/10.5281/zenodo.20619058"
   - type: pdf
     url: "https://doi.org/10.5281/zenodo.20619058"
 
@@ -32,3 +34,22 @@ tags:
 
 featured: true
 ---
+
+## Aportes principales
+
+- Dimensión fractal del **tiempo extramental acumulado** en sistemas caóticos: **D ≈ 1.98**.
+- Cotas rigurosas **1.96–2.01** bajo el paradigma Tau Sistémico / RECD.
+- Demostración vía **conjugación 2-ádica** y **renormalización ordinal**.
+
+## Enlaces
+
+| Recurso | URL |
+|---------|-----|
+| DOI / PDF | [10.5281/zenodo.20619058](https://doi.org/10.5281/zenodo.20619058) |
+| Framework | [Systemic Tau / RECD](../systemic-tau-recd-framework/) |
+
+## Cita
+
+```
+Padilla-Villanueva, J. (2026). Dimensión fractal D ≈ 1.98 del tiempo extramental acumulado en sistemas caóticos: conjugación 2-ádica y renormalización ordinal (cotas rigurosas 1.96–2.01). Zenodo. https://doi.org/10.5281/zenodo.20619058
+```

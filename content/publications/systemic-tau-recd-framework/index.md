@@ -9,12 +9,15 @@ publication_types: ["preprint"]
 
 peer_reviewed: false
 open_access: true
+license: CC-BY-4.0
 
 hugoblox:
   ids:
     doi: "10.5281/zenodo.21287252"
 
 links:
+  - type: doi
+    url: "https://doi.org/10.5281/zenodo.21287252"
   - type: pdf
     url: "https://doi.org/10.5281/zenodo.21287252"
 
@@ -31,3 +34,24 @@ tags:
 
 featured: true
 ---
+
+## Key contributions
+
+- **Systemic Tau (τ_s):** ordinal multivariate coupling via Kendall-type rank concordance.
+- **RECD:** intrinsic event-driven time from nested ordinal conjunctions (coincidence → persistence → synergistic surplus).
+- Unified relational theory for hierarchical ordinal structure and critical transitions.
+- Anchor preprint for the open software and monographic program.
+
+## Links
+
+| Resource | URL |
+|----------|-----|
+| DOI / PDF | [10.5281/zenodo.21287252](https://doi.org/10.5281/zenodo.21287252) |
+| Software | [Academy Learning Tau](https://academylearningtau.streamlit.app) |
+| Synthesis | [Second Edition monograph](../tau-sistemic-second-edition/) |
+
+## Citation
+
+```
+Padilla-Villanueva, J. (2026). Systemic Tau and the RECD framework: A relational theory of hierarchical ordinal conjunctions and critical transitions in complex systems. Zenodo. https://doi.org/10.5281/zenodo.21287252
+```

@@ -84,11 +84,24 @@ sections:
       text: |-
         Trabajo en **Systemic Tau (τ_s)** y el **Reloj Extramental Discreto (RECD)**: métricas ordinales, tiempo extramental discreto y modelos para sistemas complejos, con aplicaciones a alerta temprana y a **excess³**. En filosofía, continúo el proyecto poliano con *El acto de ser relacional-discreto*. La síntesis de programa está en *Systemic Tau and the Discrete Architecture of Time* (2.ª ed., ISBN 979-8-18776-367-2).
 
-        [Publicaciones](publications/) · [BibTeX](uploads/BibTeX_Clean_2026.bib) · [CV](uploads/resume.pdf) · [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Padilla-Villanueva%2C+Johel%22)
+        [Sobre mí](about/) · [Proyectos](project/) · [Publicaciones](publications/) · [Autor](authors/me/) · [BibTeX](uploads/BibTeX_Clean_2026.bib) · [CV](uploads/resume.pdf) · [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Padilla-Villanueva%2C+Johel%22)
 
         Contacto: [joel.padilla2@upr.edu](mailto:joel.padilla2@upr.edu)
     design:
       columns: '1'
+
+  - block: collection
+    id: projects
+    content:
+      title: 'Proyectos'
+      text: ''
+      filters:
+        folders:
+          - project
+        featured_only: true
+    design:
+      view: card
+      columns: 2
 
   - block: markdown
     id: software
@@ -143,11 +156,25 @@ sections:
 
   - block: collection
     content:
-      title: 'Catálogo'
-      text: ''
+      title: 'Catálogo reciente'
+      text: 'Lista completa en [Publicaciones](publications/).'
       filters:
         folders:
           - publications
     design:
       view: citation
+      # show latest via collection; full list lives at /publications/
+
+  - block: markdown
+    id: contact
+    content:
+      title: 'Contacto'
+      text: |-
+        **Email:** [joel.padilla2@upr.edu](mailto:joel.padilla2@upr.edu)
+
+        **Perfiles:** [ORCID](https://orcid.org/0000-0002-5797-6931) · [Google Scholar](https://scholar.google.com/citations?user=y5sLFVkAAAAJ&hl=en) · [GitHub](https://github.com/johelpadilla) · [X](https://x.com/mrjohelpadilla) · [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Padilla-Villanueva%2C+Johel%22)
+
+        **Más:** [Sobre mí](about/) · [CV](cv/) · [Perfil de autor](authors/me/)
+    design:
+      columns: '1'
 ---

@@ -16,6 +16,8 @@ hugoblox:
     doi: "10.5281/zenodo.21385937"
 
 links:
+  - type: doi
+    url: "https://doi.org/10.5281/zenodo.21385937"
   - type: pdf
     url: "https://doi.org/10.5281/zenodo.21385937"
   - type: code
@@ -35,3 +37,24 @@ tags:
 
 featured: true
 ---
+
+## Key contributions
+
+- Defines **excess³** as a pre-specified continuous proxy for **order-3 synergistic surplus**.
+- Specifies null protocol, reporting checklist, and synthetic validation suite.
+- Companion materials: Spanish dense introduction + English cross-disciplinary guide.
+- Feeds Level-3 structure (Φ₃) into the RECD clock program.
+
+## Links
+
+| Resource | URL |
+|----------|-----|
+| DOI / PDF | [10.5281/zenodo.21385937](https://doi.org/10.5281/zenodo.21385937) |
+| Code | [github.com/johelpadilla/excess3](https://github.com/johelpadilla/excess3) |
+| Related | [Φ₃–RECD integration](../phi3-recd-integration/) |
+
+## Citation
+
+```
+Padilla-Villanueva, J. (2026). excess³: A pre-specified continuous proxy for order-3 synergistic surplus — methods and synthetic validation. Zenodo. https://doi.org/10.5281/zenodo.21385937
+```

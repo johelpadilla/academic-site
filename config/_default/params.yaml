@@ -106,7 +106,7 @@ hugoblox:
     style: minimal # minimal | columns
     language_switcher: true
     # Custom footer text (HTML supported)
-    text: '<a href="https://orcid.org/0000-0002-5797-6931">ORCID</a> · <a href="https://github.com/johelpadilla">GitHub</a> · <a href="mailto:joel.padilla2@upr.edu">Contact</a>'
+    text: '<a href="about/">About</a> · <a href="https://orcid.org/0000-0002-5797-6931">ORCID</a> · <a href="https://github.com/johelpadilla">GitHub</a> · <a href="mailto:joel.padilla2@upr.edu">Contact</a>'
 
   # ────────────────────────────────────────────────────────────────────────────
   # COPYRIGHT

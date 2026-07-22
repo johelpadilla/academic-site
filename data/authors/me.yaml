@@ -12,10 +12,16 @@ postnominals:
 status:
   icon: ""
 role: "Auxiliary Professor (UPR Carolina) · Adjunct (UPR Medical Sciences Campus) · Independent Researcher"
+# Stable IDs for author cards / meta
+ids:
+  orcid: "0000-0002-5797-6931"
+  google_scholar: "y5sLFVkAAAAJ"
 bio: |
-  Independent researcher and university professor in environmental health, vector-borne disease dynamics, and theoretical frameworks for complex systems. His DrPH dissertation (UPR, 2022) examined the spatiotemporal dynamics of *Aedes aegypti* in the Caño Martín Peña area of San Juan, Puerto Rico.
+  Investigador independiente y profesor universitario en salud ambiental, dinámica de enfermedades vectoriales y marcos teóricos para sistemas complejos. Su tesis DrPH (UPR, 2022) examinó la dinámica espaciotemporal de *Aedes aegypti* en la zona del Caño Martín Peña, San Juan, Puerto Rico.
 
-  Current work centers on Systemic Tau (τ_s) and the Discrete Extramental Clock (RECD): ordinal metrics, nested discrete time, higher-order dependence (excess³), and early-warning applications (including dengue). Open software includes Academy Learning Tau and Systemic Tau; monographs include *Systemic Tau and the Discrete Architecture of Time* (2nd ed.) and philosophical work on the *acto de ser relacional-discreto* in dialogue with Leonardo Polo.
+  El trabajo actual se centra en Systemic Tau (τ_s) y el Reloj Extramental Discreto (RECD): métricas ordinales, tiempo discreto anidado, dependencia de orden superior (excess³) y alerta temprana (dengue). Software abierto: Academy Learning Tau y Systemic Tau. Monografías: *Systemic Tau and the Discrete Architecture of Time* (2.ª ed.) y *El acto de ser relacional-discreto*, en diálogo con Leonardo Polo.
+
+  Independent researcher and university professor in environmental health, vector-borne disease dynamics, and theoretical frameworks for complex systems. Current program: Systemic Tau (τ_s), RECD, excess³ / Φ₃, open educational software, and monographs in philosophy of physics.
 
 affiliations:
   - name: "Auxiliary Professor, University of Puerto Rico at Carolina"

@@ -363,8 +363,33 @@ footer a {
 #software,
 #papers,
 #research,
-#impact {
+#impact,
+#projects,
+#contact {
   scroll-margin-top: 5rem;
+}
+
+/* Project cards: same quiet treatment as featured pubs */
+#projects [role="article"] > div.relative.overflow-hidden.aspect-\[16\/9\],
+#projects [role="article"] .aspect-\[16\/9\] {
+  display: none !important;
+}
+
+#projects [role="article"],
+#projects .group {
+  box-shadow: none !important;
+  border: 1px solid var(--tau-border) !important;
+  border-radius: var(--tau-radius) !important;
+  transform: none !important;
+}
+
+#projects span.whitespace-nowrap {
+  display: none !important;
+}
+
+/* Contact block: readable line length */
+#contact .prose {
+  max-width: 42rem;
 }
 
 /* No section rainbow washes */

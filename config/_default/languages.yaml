@@ -4,7 +4,6 @@
 
 # Spanish (main language - at root)
 es:
-  languageName: Español
   label: Español
   locale: es-es
   title: "Dr. Johel Padilla-Villanueva, DrPH"
@@ -16,22 +15,27 @@ es:
       - name: Inicio
         url: /
         weight: 10
-      - name: Pilares
-        url: /#pillars
-        weight: 12
+      - name: Sobre mí
+        url: about/
+        weight: 15
+      - name: Proyectos
+        url: project/
+        weight: 20
+      - name: Publicaciones
+        url: publications/
+        weight: 25
       - name: Software
         url: /#software
-        weight: 14
-      - name: Publicaciones
-        url: /#papers
-        weight: 16
+        weight: 30
+      - name: CV
+        url: cv/
+        weight: 35
       - name: Experiencia
         url: experience/
-        weight: 20
+        weight: 40
 
 # English (secondary language)
 en:
-  languageName: English
   label: English
   locale: en-us
   title: "Dr. Johel Padilla-Villanueva, DrPH"
@@ -43,15 +47,21 @@ en:
       - name: Home
         url: /
         weight: 10
-      - name: Pillars
-        url: /#pillars
-        weight: 12
+      - name: About
+        url: about/
+        weight: 15
+      - name: Projects
+        url: project/
+        weight: 20
+      - name: Publications
+        url: publications/
+        weight: 25
       - name: Software
         url: /#software
-        weight: 14
-      - name: Publications
-        url: /#papers
-        weight: 16
+        weight: 30
+      - name: CV
+        url: cv/
+        weight: 35
       - name: Experience
         url: experience/
-        weight: 20
+        weight: 40

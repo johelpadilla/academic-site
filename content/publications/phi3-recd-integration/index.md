@@ -9,12 +9,15 @@ publication_types: ["preprint"]
 
 peer_reviewed: false
 open_access: true
+license: CC-BY-4.0
 
 hugoblox:
   ids:
     doi: "10.5281/zenodo.21400599"
 
 links:
+  - type: doi
+    url: "https://doi.org/10.5281/zenodo.21400599"
   - type: pdf
     url: "https://doi.org/10.5281/zenodo.21400599"
   - type: code
@@ -33,3 +36,24 @@ tags:
 
 featured: true
 ---
+
+## Key contributions
+
+- Couples **Φ₃ / excess³** into **RECD** dynamics (bilingual EN + ES).
+- **Proposal 1** (default): legacy RECD increment × surplus-gated gain Γ₃ with activation gate A₃.
+- **Proposal 2** (experimental): dual-channel advance of the discrete clock.
+- Shifts Φ₃ from a *parallel* metric toward a *structural* clock contribution.
+
+## Links
+
+| Resource | URL |
+|----------|-----|
+| DOI / PDF | [10.5281/zenodo.21400599](https://doi.org/10.5281/zenodo.21400599) |
+| Code | [github.com/johelpadilla/phi3-recd](https://github.com/johelpadilla/phi3-recd) |
+| Methods base | [excess³ methods](../excess3-methods-2026/) |
+
+## Citation
+
+```
+Padilla-Villanueva, J. (2026). Integrating Φ₃ (excess³) into RECD dynamics: From parallel metric to structural clock contribution. Zenodo. https://doi.org/10.5281/zenodo.21400599
+```

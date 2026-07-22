@@ -29,3 +29,23 @@ tags:
 
 featured: true
 ---
+
+## Aportes principales
+
+- Continúa el **persistir** poliano y la distinción real acto de ser / esencia en el plano cosmológico (sin confundirlo con el co-existir personal).
+- Tesis del **acto de ser relacional-discreto**: el cosmos se actualiza en un orden relacional cuya condición es el hiato («vacío» entre conjunciones).
+- El tiempo extramental como **distensión del acto**, no como contenedor newtoniano.
+- Diálogo con herencias aristotélica, atomista y poliana; capítulos sobre Vanney y la *Antropología trascendental*.
+
+## Enlaces
+
+| Recurso | URL |
+|---------|-----|
+| PDF | [acto-ser-relacional-discreto.pdf](../../uploads/publications/acto-ser-relacional-discreto.pdf) |
+| Variante voz del autor | [acto-ser-relacional-discreto-voz-autor](../acto-ser-relacional-discreto-voz-autor/) |
+
+## Cita
+
+```
+Padilla-Villanueva, J. (2026). El acto de ser relacional-discreto: persistir, physis y vacío en la continuidad del proyecto poliano.
+```

@@ -33,3 +33,25 @@ tags:
 
 featured: true
 ---
+
+## Key contributions
+
+- Program synthesis for **Systemic Tau / RECD** (2022–2026).
+- Second Edition extensions: **excess³ / Φ₃**, three-layer ontology, ontological ascent, nested ordinal depth.
+- Bridges methods preprints, software, and philosophical continuations.
+- ISBN **979-8-18776-367-2**.
+
+## Links
+
+| Resource | URL |
+|----------|-----|
+| PDF (site) | [tau-sistemic-second-edition.pdf](../../uploads/publications/tau-sistemic-second-edition.pdf) |
+| Framework | [10.5281/zenodo.21287252](https://doi.org/10.5281/zenodo.21287252) |
+| excess³ | [10.5281/zenodo.21385937](https://doi.org/10.5281/zenodo.21385937) |
+| Φ₃–RECD | [10.5281/zenodo.21400599](https://doi.org/10.5281/zenodo.21400599) |
+
+## Citation
+
+```
+Padilla-Villanueva, J. (2026). Systemic Tau and the Discrete Architecture of Time (2nd ed.). Independently published. ISBN 979-8-18776-367-2.
+```
