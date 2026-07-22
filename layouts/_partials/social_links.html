@@ -1,0 +1,41 @@
+{{/* Labeled social chips — more visible than icon-only 1em glyphs */}}
+{{ if .Params.profiles }}
+<div class="tau-social-chips">
+  {{ range .Params.profiles }}
+    {{ $link := .url }}
+    {{ $scheme := (urls.Parse $link).Scheme }}
+    {{ $target := "" }}
+    {{ if not $scheme }}
+      {{ $link = .url | relLangURL }}
+    {{ else if in (slice "http" "https") $scheme }}
+      {{ $target = "target=\"_blank\" rel=\"noopener noreferrer me\"" }}
+    {{ end }}
+    {{ $iconLower := lower (.icon | default "") }}
+    {{ $label := .label | default (.icon | humanize | title) }}
+    {{ if in $iconLower "orcid" }}
+      {{ $label = "ORCID" }}
+    {{ else if in $iconLower "google-scholar" }}
+      {{ $label = "Scholar" }}
+    {{ else if in $iconLower "scholar" }}
+      {{ $label = "Scholar" }}
+    {{ else if in $iconLower "github" }}
+      {{ $label = "GitHub" }}
+    {{ else if or (eq $iconLower "brands/x") (in $iconLower "twitter") (strings.HasSuffix $iconLower "/x") }}
+      {{ $label = "X" }}
+    {{ else if in $iconLower "zenodo" }}
+      {{ $label = "Zenodo" }}
+    {{ else if or (in $iconLower "at-symbol") (hasPrefix $link "mailto:") }}
+      {{ $label = "Email" }}
+    {{ end }}
+    <a
+      class="tau-social-chip"
+      href="{{ $link | safeURL }}"
+      {{ $target | safeHTMLAttr }}
+      aria-label="{{ $label }}"
+      title="{{ $label }}"
+    >{{ partial "functions/get_icon" (dict "name" .icon "attributes" "class=\"tau-social-chip-icon\"") }}
+      <span class="tau-social-chip-label">{{ $label }}</span>
+    </a>
+  {{ end }}
+</div>
+{{ end }}

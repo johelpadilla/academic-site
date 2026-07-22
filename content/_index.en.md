@@ -10,17 +10,31 @@ sections:
     content:
       title: ''
       text: |-
-        <div class="tau-hero">
-          <p class="tau-hero-kicker">Open research · UPR</p>
-          <h1 class="tau-hero-title">Systemic Tau (τ<sub>s</sub>) · RECD · excess³</h1>
-          <p class="tau-hero-lede">
-            Ordinal frameworks for complex systems, discrete extramental time, and higher-order dependence — with open software and monographs.
-          </p>
-          <div class="tau-hero-actions">
-            <a class="tau-btn tau-btn-primary" href="publications/">Publications</a>
-            <a class="tau-btn tau-btn-ghost" href="project/">Projects</a>
-            <a class="tau-btn tau-btn-ghost" href="#software">Software</a>
-            <a class="tau-btn tau-btn-ghost" href="about/">About</a>
+        <div class="tau-hero tau-hero-split">
+          <div class="tau-hero-copy">
+            <p class="tau-hero-kicker">Open research · UPR</p>
+            <h1 class="tau-hero-title">Systemic Tau (τ<sub>s</sub>) · RECD · excess³</h1>
+            <p class="tau-hero-lede">
+              Ordinal frameworks for complex systems, discrete extramental time, and higher-order dependence — with open software and monographs.
+            </p>
+            <div class="tau-hero-actions">
+              <a class="tau-btn tau-btn-primary" href="publications/">Publications</a>
+              <a class="tau-btn tau-btn-ghost" href="project/">Projects</a>
+              <a class="tau-btn tau-btn-ghost" href="software/">Software</a>
+              <a class="tau-btn tau-btn-ghost" href="about/">About</a>
+            </div>
+            <div class="tau-hero-socials">
+              <a class="tau-social-chip" href="https://orcid.org/0000-0002-5797-6931" target="_blank" rel="noopener">ORCID</a>
+              <a class="tau-social-chip" href="https://scholar.google.com/citations?user=y5sLFVkAAAAJ&amp;hl=en" target="_blank" rel="noopener">Scholar</a>
+              <a class="tau-social-chip" href="https://github.com/johelpadilla" target="_blank" rel="noopener">GitHub</a>
+              <a class="tau-social-chip" href="https://x.com/mrjohelpadilla" target="_blank" rel="noopener">X</a>
+              <a class="tau-social-chip" href="https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Padilla-Villanueva%2C+Johel%22" target="_blank" rel="noopener">Zenodo</a>
+              <a class="tau-social-chip" href="mailto:joel.padilla2@upr.edu">Email</a>
+            </div>
+          </div>
+          <div class="tau-hero-photo">
+            <img src="/academic-site/media/authors/me.jpg" width="220" height="220" alt="Dr. Johel Padilla-Villanueva, DrPH" class="tau-hero-avatar" loading="eager" decoding="async">
+            <p class="tau-hero-photo-caption">Dr. Johel Padilla-Villanueva, DrPH</p>
           </div>
         </div>
     design:
@@ -163,14 +177,16 @@ sections:
       columns: '1'
 
   - block: collection
+    id: catalog
     content:
       title: 'Recent catalog'
-      text: 'Full list at [Publications](publications/).'
+      text: 'Full list at [Publications](publications/) — DOI and PDF on each detail page.'
       filters:
         folders:
           - publications
     design:
       view: citation
+      columns: 1
 
   - block: markdown
     id: contact

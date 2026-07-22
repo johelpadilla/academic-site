@@ -1,0 +1,123 @@
+{{ define "main" }}
+
+{{ $slug := .Data.Term | urlize }}
+{{ $profile := partial "functions/get_author_profile" (dict "slug" $slug) }}
+{{ $avatar := $profile.avatar }}
+{{ $avatar_shape := site.Params.hugoblox.layout.avatar_shape | default "circle" }}
+
+<section class="tau-author-profile max-w-5xl mx-auto px-6 py-10">
+  <div class="tau-author-card">
+    <div class="tau-author-photo">
+      {{ if $avatar }}
+        {{ if not (reflect.IsImageResourceProcessable $avatar) }}
+        <img
+          class="tau-author-avatar {{ if ne $avatar_shape "square" }}rounded-full{{ end }}"
+          src="{{ $avatar.RelPermalink }}"
+          width="220"
+          height="220"
+          alt="{{ $profile.title }}"
+          loading="eager"
+        />
+        {{ else }}
+        {{ $responsive := partial "functions/process_responsive_image.html" (dict
+          "image" $avatar
+          "mode" "fill"
+          "aspect_ratio" "1:1"
+          "anchor" "Center"
+          "sizes" (slice 220 320 440 640)
+        ) }}
+        <img
+          class="tau-author-avatar {{ if ne $avatar_shape "square" }}rounded-full{{ end }}"
+          srcset="{{ $responsive.srcset }}"
+          sizes="220px"
+          src="{{ $responsive.fallback.RelPermalink }}"
+          width="220"
+          height="220"
+          alt="{{ $profile.title }}"
+          loading="eager"
+        />
+        {{ end }}
+      {{ else }}
+        {{/* Stable static fallback */}}
+        <img
+          class="tau-author-avatar rounded-full"
+          src="{{ "media/authors/me.jpg" | relURL }}"
+          width="220"
+          height="220"
+          alt="{{ $profile.title }}"
+          loading="eager"
+        />
+      {{ end }}
+    </div>
+
+    <div class="tau-author-meta">
+      <p class="tau-author-kicker">{{ if eq site.Language.Lang "en" }}Author profile{{ else }}Perfil de autor{{ end }}</p>
+      <h1 class="tau-author-name">{{ $profile.title }}</h1>
+
+      {{ with $profile.role }}
+        <p class="tau-author-role">{{ . | markdownify | emojify }}</p>
+      {{ end }}
+
+      {{ with $profile.affiliations }}
+        <p class="tau-author-affils">
+          {{ range $index, $org := . }}
+            {{ if gt $index 0 }} · {{ end }}
+            {{ if $org.url }}<a href="{{ $org.url }}">{{ $org.name }}</a>{{ else }}{{ $org.name }}{{ end }}
+          {{ end }}
+        </p>
+      {{ end }}
+
+      {{ with $profile.bio }}
+        <div class="tau-author-bio prose prose-slate dark:prose-invert max-w-none">
+          {{ . | markdownify | emojify }}
+        </div>
+      {{ end }}
+
+      {{ if $profile.links }}
+        <div class="tau-author-socials">
+          {{ partial "social_links" (dict "Params" (dict "profiles" $profile.links)) }}
+        </div>
+      {{ end }}
+
+      <p class="tau-author-more">
+        {{ if eq site.Language.Lang "en" }}
+          <a href="{{ "about/" | relLangURL }}">About</a> ·
+          <a href="{{ "cv/" | relLangURL }}">CV</a> ·
+          <a href="{{ "publications/" | relLangURL }}">Publications</a>
+        {{ else }}
+          <a href="{{ "about/" | relLangURL }}">Sobre mí</a> ·
+          <a href="{{ "cv/" | relLangURL }}">CV</a> ·
+          <a href="{{ "publications/" | relLangURL }}">Publicaciones</a>
+        {{ end }}
+      </p>
+    </div>
+  </div>
+</section>
+
+{{ $view := "card" }}
+{{ $block := . }}
+{{ $paginator := .Paginate .Pages.ByDate.Reverse }}
+{{ $config := dict
+  "columns" 2
+  "len" (len $paginator.Pages)
+  "fill_image" true
+  "show_date" true
+  "show_read_time" false
+  "show_read_more" true
+}}
+
+<section class="tau-author-works max-w-6xl mx-auto px-6 pb-12">
+  <h2 class="tau-author-works-title">
+    {{ if eq site.Language.Lang "en" }}Selected works{{ else }}Trabajos seleccionados{{ end }}
+  </h2>
+  <div class="flex flex-col items-center">
+    {{ partial "functions/render_view" (dict "fragment" "start" "page" $block "item" . "view" $view "config" $config) }}
+    {{ range $index, $item := $paginator.Pages }}
+      {{ partial "functions/render_view" (dict "page" . "item" . "view" $view "index" $index "config" $config) }}
+    {{ end }}
+    {{ partial "functions/render_view" (dict "fragment" "end" "page" $block "item" . "view" $view) }}
+    {{ partial "components/paginator" . }}
+  </div>
+</section>
+
+{{ end }}
