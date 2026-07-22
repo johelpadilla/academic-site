@@ -5,6 +5,27 @@ date: 2022-10-24
 type: landing
 
 sections:
+  - block: markdown
+    id: hero
+    content:
+      title: ''
+      text: |-
+        <div class="tau-hero">
+          <p class="tau-hero-kicker">Open research · UPR</p>
+          <h1 class="tau-hero-title">Systemic Tau (τ<sub>s</sub>) · RECD · excess³</h1>
+          <p class="tau-hero-lede">
+            Ordinal frameworks for complex systems, discrete extramental time, and higher-order dependence — with open software and monographs.
+          </p>
+          <div class="tau-hero-actions">
+            <a class="tau-btn tau-btn-primary" href="publications/">Publications</a>
+            <a class="tau-btn tau-btn-ghost" href="project/">Projects</a>
+            <a class="tau-btn tau-btn-ghost" href="#software">Software</a>
+            <a class="tau-btn tau-btn-ghost" href="about/">About</a>
+          </div>
+        </div>
+    design:
+      columns: '1'
+
   - block: resume-biography-3
     content:
       username: me
@@ -30,7 +51,7 @@ sections:
       name:
         size: md
       avatar:
-        size: medium
+        size: large
         shape: circle
 
   - block: stats
@@ -58,7 +79,7 @@ sections:
     id: pillars
     content:
       title: 'Program lines'
-      subtitle: ''
+      subtitle: 'Core identity'
       text: ''
       items:
         - name: 'Systemic Tau (τ_s)'
@@ -76,19 +97,18 @@ sections:
     design:
       layout: grid
 
-  - block: markdown
-    id: research
+  - block: collection
+    id: papers
     content:
-      title: 'Research'
-      subtitle: ''
-      text: |-
-        Work on **Systemic Tau (τ_s)** and the **Discrete Extramental Clock (RECD)**: ordinal metrics, discrete extramental time, and models for complex systems, with applications to early warning and **excess³**. In philosophy, I continue Polo’s project with *El acto de ser relacional-discreto*. The program synthesis is *Systemic Tau and the Discrete Architecture of Time* (2nd ed., ISBN 979-8-18776-367-2).
-
-        [About](about/) · [Projects](project/) · [Publications](publications/) · [Author](authors/me/) · [BibTeX](uploads/BibTeX_Clean_2026.bib) · [CV](uploads/resume.pdf) · [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Padilla-Villanueva%2C+Johel%22)
-
-        Contact: [joel.padilla2@upr.edu](mailto:joel.padilla2@upr.edu)
+      title: 'Featured publications'
+      text: 'DOI, PDF, and code on each card. Full catalog at [Publications](publications/).'
+      filters:
+        folders:
+          - publications
+        featured_only: true
     design:
-      columns: '1'
+      view: card
+      columns: 2
 
   - block: collection
     id: projects
@@ -107,13 +127,13 @@ sections:
     id: software
     content:
       title: 'Software'
-      subtitle: ''
+      subtitle: 'Open tools from the program'
       text: |-
         <div class="tau-product-grid">
           <div class="tau-product-card">
             <span class="tau-kicker">Web · teaching</span>
             <h3>Academy Learning Tau</h3>
-            <p>Streamlit platform (v1.1) for τ_s, RECD, EWS, and a reproducible laboratory. ES · EN · FR.</p>
+            <p>Streamlit platform (v1.1) for τ_s, RECD, EWS, and a reproducible lab. ES · EN · FR.</p>
             <div class="tau-links">
               <a href="https://academylearningtau.streamlit.app">App</a>
               <a href="https://doi.org/10.5281/zenodo.21301571">DOI</a>
@@ -123,7 +143,7 @@ sections:
           <div class="tau-product-card">
             <span class="tau-kicker">macOS</span>
             <h3>Systemic Tau</h3>
-            <p>Desktop app for analysis, reporting, and an academic-format kernel.</p>
+            <p>Desktop app for analysis, reporting, and an academic-format core.</p>
             <div class="tau-links">
               <a href="https://github.com/johelpadilla/systemictau/releases">Downloads</a>
               <a href="https://github.com/johelpadilla/systemictau">Code</a>
@@ -132,7 +152,7 @@ sections:
           <div class="tau-product-card">
             <span class="tau-kicker">Methods</span>
             <h3>excess³</h3>
-            <p>Order-3 proxy: methods, Spanish introduction, and cross-disciplinary guide.</p>
+            <p>Order-3 proxy: methods paper, Spanish intro, and cross-disciplinary guide.</p>
             <div class="tau-links">
               <a href="https://doi.org/10.5281/zenodo.21385937">DOI</a>
               <a href="https://github.com/johelpadilla/excess3">Code</a>
@@ -141,18 +161,6 @@ sections:
         </div>
     design:
       columns: '1'
-
-  - block: collection
-    id: papers
-    content:
-      title: 'Featured publications'
-      filters:
-        folders:
-          - publications
-        featured_only: true
-    design:
-      view: article-grid
-      columns: 2
 
   - block: collection
     content:
@@ -173,7 +181,7 @@ sections:
 
         **Profiles:** [ORCID](https://orcid.org/0000-0002-5797-6931) · [Google Scholar](https://scholar.google.com/citations?user=y5sLFVkAAAAJ&hl=en) · [GitHub](https://github.com/johelpadilla) · [X](https://x.com/mrjohelpadilla) · [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Padilla-Villanueva%2C+Johel%22)
 
-        **More:** [About](about/) · [CV](cv/) · [Author profile](authors/me/)
+        **More:** [About](/academic-site/en/about/) · [CV](/academic-site/cv/) · [Author profile](/academic-site/authors/me/)
     design:
       columns: '1'
 ---

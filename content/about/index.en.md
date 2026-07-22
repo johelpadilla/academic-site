@@ -35,7 +35,7 @@ sections:
       name:
         size: md
       avatar:
-        size: medium
+        size: large
         shape: circle
 
   - block: markdown
@@ -48,9 +48,9 @@ sections:
         In philosophy of physics, I continue Polo’s project with *El acto de ser relacional-discreto*. The program synthesis is *Systemic Tau and the Discrete Architecture of Time* (2nd ed., ISBN 979-8-18776-367-2).
 
         ### Quick links
-        - [Author profile](../authors/me/) · [Publications](../publications/) · [Projects](../project/)
+        - [Author profile](/academic-site/authors/me/) · [Publications](/academic-site/publications/) · [Projects](/academic-site/project/)
         - [ORCID](https://orcid.org/0000-0002-5797-6931) · [Google Scholar](https://scholar.google.com/citations?user=y5sLFVkAAAAJ&hl=en) · [GitHub](https://github.com/johelpadilla)
-        - [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Padilla-Villanueva%2C+Johel%22) · [BibTeX](../uploads/BibTeX_Clean_2026.bib) · [CV PDF](../uploads/resume.pdf)
+        - [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Padilla-Villanueva%2C+Johel%22) · [BibTeX](/academic-site/uploads/BibTeX_Clean_2026.bib) · [CV PDF](/academic-site/uploads/resume.pdf)
         - Contact: [joel.padilla2@upr.edu](mailto:joel.padilla2@upr.edu)
     design:
       columns: '1'

@@ -37,7 +37,7 @@ sections:
       name:
         size: md
       avatar:
-        size: medium
+        size: large
         shape: circle
 
   - block: markdown
@@ -50,9 +50,9 @@ sections:
         En filosofía de la física, continúo el proyecto poliano con *El acto de ser relacional-discreto*. La síntesis de programa está en *Systemic Tau and the Discrete Architecture of Time* (2.ª ed., ISBN 979-8-18776-367-2).
 
         ### Enlaces rápidos
-        - [Perfil de autor](../authors/me/) · [Publicaciones](../publications/) · [Proyectos](../project/)
+        - [Perfil de autor](/academic-site/authors/me/) · [Publicaciones](/academic-site/publications/) · [Proyectos](/academic-site/project/)
         - [ORCID](https://orcid.org/0000-0002-5797-6931) · [Google Scholar](https://scholar.google.com/citations?user=y5sLFVkAAAAJ&hl=en) · [GitHub](https://github.com/johelpadilla)
-        - [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Padilla-Villanueva%2C+Johel%22) · [BibTeX](../uploads/BibTeX_Clean_2026.bib) · [CV PDF](../uploads/resume.pdf)
+        - [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Padilla-Villanueva%2C+Johel%22) · [BibTeX](/academic-site/uploads/BibTeX_Clean_2026.bib) · [CV PDF](/academic-site/uploads/resume.pdf)
         - Contacto: [joel.padilla2@upr.edu](mailto:joel.padilla2@upr.edu)
     design:
       columns: '1'

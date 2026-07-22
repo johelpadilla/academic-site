@@ -5,6 +5,28 @@ date: 2022-10-24
 type: landing
 
 sections:
+  # ── Hero: clear identity line ────────────────────────────────────────────
+  - block: markdown
+    id: hero
+    content:
+      title: ''
+      text: |-
+        <div class="tau-hero">
+          <p class="tau-hero-kicker">Investigación abierta · UPR</p>
+          <h1 class="tau-hero-title">Systemic Tau (τ<sub>s</sub>) · RECD · excess³</h1>
+          <p class="tau-hero-lede">
+            Marcos ordinales para sistemas complejos, tiempo extramental discreto y dependencia de orden superior — con software abierto y monografías.
+          </p>
+          <div class="tau-hero-actions">
+            <a class="tau-btn tau-btn-primary" href="publications/">Publicaciones</a>
+            <a class="tau-btn tau-btn-ghost" href="project/">Proyectos</a>
+            <a class="tau-btn tau-btn-ghost" href="#software">Software</a>
+            <a class="tau-btn tau-btn-ghost" href="about/">Sobre mí</a>
+          </div>
+        </div>
+    design:
+      columns: '1'
+
   - block: resume-biography-3
     content:
       username: me
@@ -30,7 +52,7 @@ sections:
       name:
         size: md
       avatar:
-        size: medium
+        size: large
         shape: circle
 
   - block: stats
@@ -58,7 +80,7 @@ sections:
     id: pillars
     content:
       title: 'Líneas del programa'
-      subtitle: ''
+      subtitle: 'Núcleo identitario'
       text: ''
       items:
         - name: 'Systemic Tau (τ_s)'
@@ -76,19 +98,18 @@ sections:
     design:
       layout: grid
 
-  - block: markdown
-    id: research
+  - block: collection
+    id: papers
     content:
-      title: 'Investigación'
-      subtitle: ''
-      text: |-
-        Trabajo en **Systemic Tau (τ_s)** y el **Reloj Extramental Discreto (RECD)**: métricas ordinales, tiempo extramental discreto y modelos para sistemas complejos, con aplicaciones a alerta temprana y a **excess³**. En filosofía, continúo el proyecto poliano con *El acto de ser relacional-discreto*. La síntesis de programa está en *Systemic Tau and the Discrete Architecture of Time* (2.ª ed., ISBN 979-8-18776-367-2).
-
-        [Sobre mí](about/) · [Proyectos](project/) · [Publicaciones](publications/) · [Autor](authors/me/) · [BibTeX](uploads/BibTeX_Clean_2026.bib) · [CV](uploads/resume.pdf) · [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Padilla-Villanueva%2C+Johel%22)
-
-        Contacto: [joel.padilla2@upr.edu](mailto:joel.padilla2@upr.edu)
+      title: 'Publicaciones destacadas'
+      text: 'DOI, PDF y código en cada ficha. Catálogo completo en [Publicaciones](publications/).'
+      filters:
+        folders:
+          - publications
+        featured_only: true
     design:
-      columns: '1'
+      view: card
+      columns: 2
 
   - block: collection
     id: projects
@@ -107,7 +128,7 @@ sections:
     id: software
     content:
       title: 'Software'
-      subtitle: ''
+      subtitle: 'Herramientas abiertas del programa'
       text: |-
         <div class="tau-product-grid">
           <div class="tau-product-card">
@@ -143,18 +164,6 @@ sections:
       columns: '1'
 
   - block: collection
-    id: papers
-    content:
-      title: 'Publicaciones destacadas'
-      filters:
-        folders:
-          - publications
-        featured_only: true
-    design:
-      view: article-grid
-      columns: 2
-
-  - block: collection
     content:
       title: 'Catálogo reciente'
       text: 'Lista completa en [Publicaciones](publications/).'
@@ -163,7 +172,6 @@ sections:
           - publications
     design:
       view: citation
-      # show latest via collection; full list lives at /publications/
 
   - block: markdown
     id: contact
@@ -174,7 +182,7 @@ sections:
 
         **Perfiles:** [ORCID](https://orcid.org/0000-0002-5797-6931) · [Google Scholar](https://scholar.google.com/citations?user=y5sLFVkAAAAJ&hl=en) · [GitHub](https://github.com/johelpadilla) · [X](https://x.com/mrjohelpadilla) · [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Padilla-Villanueva%2C+Johel%22)
 
-        **Más:** [Sobre mí](about/) · [CV](cv/) · [Perfil de autor](authors/me/)
+        **Más:** [Sobre mí](/academic-site/about/) · [CV](/academic-site/cv/) · [Perfil de autor](/academic-site/authors/me/)
     design:
       columns: '1'
 ---

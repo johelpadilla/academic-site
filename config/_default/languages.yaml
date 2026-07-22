@@ -25,7 +25,7 @@ es:
         url: publications/
         weight: 25
       - name: Software
-        url: /#software
+        url: /academic-site/#software
         weight: 30
       - name: CV
         url: cv/
@@ -57,7 +57,7 @@ en:
         url: publications/
         weight: 25
       - name: Software
-        url: /#software
+        url: /academic-site/en/#software
         weight: 30
       - name: CV
         url: cv/
