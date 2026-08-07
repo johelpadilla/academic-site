@@ -11,9 +11,11 @@ hugoblox:
   ids:
     doi: "10.5281/zenodo.20576241"
 links:
+  - type: doi
+    url: "https://doi.org/10.5281/zenodo.20576241"
   - type: pdf
     url: "https://doi.org/10.5281/zenodo.20576241"
 summary: "El Paradigma del Tau Sistémico y la Ley del Reloj Extramental Discreto (RECD) en Sistemas Complejos — versión ilustrada."
 tags: ["Tau Sistémico", "RECD", "Paradigma"]
-featured: false
+featured: true
 ---

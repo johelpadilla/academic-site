@@ -1,5 +1,5 @@
 ---
-title: Publicaciones · Publications
+title: Publicaciones
 cms_exclude: true
 view: card
 aliases:
@@ -9,5 +9,6 @@ banner:
   image: ''
 ---
 
-Trabajos recientes (2026) en [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Padilla-Villanueva%2C+Johel%22) (CC-BY 4.0).  
-DOI, PDF y código en cada ficha. BibTeX: [BibTeX_Clean_2026.bib](../uploads/BibTeX_Clean_2026.bib) · Software: [Academy Learning Tau](https://academylearningtau.streamlit.app).
+Catálogo en fichas con portada cuando está disponible. Trabajos recientes (2026) en [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Padilla-Villanueva%2C+Johel%22) (CC-BY 4.0).
+
+**Enlaces útiles:** [BibTeX 2026](../uploads/BibTeX_Clean_2026.bib) · [Software](../software/) · [Academy Learning Tau](https://academylearningtau.streamlit.app)

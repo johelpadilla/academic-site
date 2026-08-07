@@ -11,6 +11,8 @@ hugoblox:
   ids:
     doi: "10.5281/zenodo.20615901"
 links:
+  - type: doi
+    url: "https://doi.org/10.5281/zenodo.20615901"
   - type: pdf
     url: "https://doi.org/10.5281/zenodo.20615901"
 summary: "Reconstrucción de mapas de primer retorno unimodales a partir de coherencia ordinal, validación y aplicación a datos de población de laboratorio."

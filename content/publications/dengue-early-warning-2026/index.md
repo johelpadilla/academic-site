@@ -15,6 +15,8 @@ hugoblox:
     doi: "10.5281/zenodo.20657723"
 
 links:
+  - type: doi
+    url: "https://doi.org/10.5281/zenodo.20657723"
   - type: pdf
     url: "https://doi.org/10.5281/zenodo.20657723"
 
@@ -28,5 +30,5 @@ tags:
 - Systemic Tau
 - Public Health
 
-featured: false
+featured: true
 ---

@@ -107,7 +107,7 @@ hugoblox:
     language_switcher: true
     # Custom footer text (HTML supported)
     # Root-absolute paths (baseURL is /academic-site/) so footer never 404s from nested pages
-    text: '<a href="/academic-site/about/">About</a> · <a href="/academic-site/authors/me/">Author</a> · <a href="https://orcid.org/0000-0002-5797-6931">ORCID</a> · <a href="https://github.com/johelpadilla">GitHub</a> · <a href="mailto:joel.padilla2@upr.edu">Contact</a>'
+    text: '<a href="/academic-site/about/">Sobre mí</a> · <a href="/academic-site/authors/me/">Autor</a> · <a href="/academic-site/publications/">Publicaciones</a> · <a href="https://orcid.org/0000-0002-5797-6931">ORCID</a> · <a href="https://github.com/johelpadilla">GitHub</a> · <a href="mailto:joel.padilla2@upr.edu">Contacto</a>'
 
   # ────────────────────────────────────────────────────────────────────────────
   # COPYRIGHT

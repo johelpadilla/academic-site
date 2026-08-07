@@ -11,6 +11,8 @@ hugoblox:
   ids:
     doi: "10.5281/zenodo.20740192"
 links:
+  - type: doi
+    url: "https://doi.org/10.5281/zenodo.20740192"
   - type: pdf
     url: "https://doi.org/10.5281/zenodo.20740192"
 summary: "Three-layer ontological framework for dengue early warning using joint episodes."

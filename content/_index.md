@@ -41,34 +41,6 @@ sections:
     design:
       columns: '1'
 
-  - block: resume-biography-3
-    content:
-      username: me
-      text: ''
-      button:
-        text: Descargar CV (PDF)
-        url: uploads/resume.pdf
-      headings:
-        about: 'Perfil'
-        education: 'Formación'
-        interests: 'Líneas de trabajo'
-    design:
-      background:
-        gradient_mesh:
-          enable: true
-          style: orbs
-          animation: none
-          intensity: subtle
-          orb_count: 2
-          colors:
-            - "primary-500/10"
-            - "secondary-500/8"
-      name:
-        size: md
-      avatar:
-        size: large
-        shape: circle
-
   - block: stats
     id: impact
     content:
@@ -116,7 +88,8 @@ sections:
     id: papers
     content:
       title: 'Publicaciones destacadas'
-      text: 'DOI, PDF y código en cada ficha. Catálogo completo en [Publicaciones](publications/).'
+      text: 'Fichas con portada, DOI y PDF. Catálogo completo en [Publicaciones](publications/).'
+      count: 10
       filters:
         folders:
           - publications
@@ -129,7 +102,8 @@ sections:
     id: projects
     content:
       title: 'Proyectos'
-      text: ''
+      text: 'Software, RECD, excess³ y alerta temprana en dengue.'
+      count: 6
       filters:
         folders:
           - project
@@ -174,31 +148,53 @@ sections:
             </div>
           </div>
         </div>
+        <p class="tau-section-more"><a href="software/">Ver página de Software →</a></p>
     design:
       columns: '1'
 
-  - block: collection
-    id: catalog
+  - block: resume-biography-3
+    id: profile
     content:
-      title: 'Catálogo reciente'
-      text: 'Vista completa en [Publicaciones](publications/) — DOI y PDF en cada ficha de detalle.'
-      filters:
-        folders:
-          - publications
+      username: me
+      text: ''
+      button:
+        text: Descargar CV (PDF)
+        url: uploads/resume.pdf
+      headings:
+        about: 'Perfil'
+        education: 'Formación'
+        interests: 'Líneas de trabajo'
     design:
-      view: citation
-      columns: 1
+      background:
+        gradient_mesh:
+          enable: false
+      name:
+        size: md
+      avatar:
+        size: small
+        shape: circle
 
   - block: markdown
     id: contact
     content:
       title: 'Contacto'
       text: |-
-        **Email:** [joel.padilla2@upr.edu](mailto:joel.padilla2@upr.edu)
-
-        **Perfiles:** [ORCID](https://orcid.org/0000-0002-5797-6931) · [Google Scholar](https://scholar.google.com/citations?user=y5sLFVkAAAAJ&hl=en) · [GitHub](https://github.com/johelpadilla) · [X](https://x.com/mrjohelpadilla) · [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Padilla-Villanueva%2C+Johel%22)
-
-        **Más:** [Sobre mí](/academic-site/about/) · [CV](/academic-site/cv/) · [Perfil de autor](/academic-site/authors/me/)
+        <div class="tau-contact-block">
+          <p class="tau-contact-lede">Colaboraciones, docencia y consultas sobre el programa Systemic Tau / RECD.</p>
+          <div class="tau-hero-socials">
+            <a class="tau-social-chip" href="mailto:joel.padilla2@upr.edu">Email</a>
+            <a class="tau-social-chip" href="https://orcid.org/0000-0002-5797-6931" target="_blank" rel="noopener">ORCID</a>
+            <a class="tau-social-chip" href="https://scholar.google.com/citations?user=y5sLFVkAAAAJ&amp;hl=en" target="_blank" rel="noopener">Scholar</a>
+            <a class="tau-social-chip" href="https://github.com/johelpadilla" target="_blank" rel="noopener">GitHub</a>
+            <a class="tau-social-chip" href="https://x.com/mrjohelpadilla" target="_blank" rel="noopener">X</a>
+            <a class="tau-social-chip" href="https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Padilla-Villanueva%2C+Johel%22" target="_blank" rel="noopener">Zenodo</a>
+          </div>
+          <p class="tau-section-more">
+            <a href="/academic-site/about/">Sobre mí</a> ·
+            <a href="/academic-site/cv/">CV</a> ·
+            <a href="/academic-site/authors/me/">Perfil de autor</a>
+          </p>
+        </div>
     design:
       columns: '1'
 ---

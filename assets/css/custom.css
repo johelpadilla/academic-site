@@ -778,6 +778,64 @@ footer a {
   max-width: 42rem;
 }
 
+.tau-contact-block {
+  max-width: 40rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tau-contact-lede {
+  margin: 0 0 1rem !important;
+  font-size: 1.05rem !important;
+  line-height: 1.6 !important;
+  opacity: 0.88;
+}
+
+.tau-contact-block .tau-hero-socials {
+  justify-content: center;
+  margin-top: 0;
+}
+
+.tau-section-more {
+  margin: 1rem 0 0 !important;
+  font-size: 0.95rem !important;
+  opacity: 0.85;
+}
+
+.tau-section-more a {
+  font-weight: 550;
+  text-decoration: underline !important;
+  text-underline-offset: 0.15em;
+}
+
+/* Publications list page: card + attachment chips */
+#publications [role="article"],
+.page-body [role="article"] {
+  overflow: hidden;
+}
+
+article a.hb-attachment-link,
+.page-body a.hb-attachment-link {
+  display: inline-flex !important;
+}
+
+/* Stronger hero on wide screens */
+@media (min-width: 900px) {
+  .tau-hero {
+    max-width: 64rem;
+    padding: 2.25rem 0 1rem;
+  }
+  .tau-hero-avatar {
+    width: 12.5rem !important;
+    height: 12.5rem !important;
+  }
+}
+
+/* Profile section quieter after hero */
+#profile {
+  scroll-margin-top: 5rem;
+}
+
 /* No section rainbow washes */
 #software,
 #papers {
