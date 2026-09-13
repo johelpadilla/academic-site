@@ -20,6 +20,7 @@ links:
 
 ### Entregables
 - Marco teórico RECD / τ_s ([Zenodo 10.5281/zenodo.21287252](https://doi.org/10.5281/zenodo.21287252))
+- *Summa Tau Sistemica* (Tomos I–IV)
 - Monografía *Systemic Tau and the Discrete Architecture of Time* (2.ª ed.)
 - App de escritorio macOS **Systemic Tau** ([releases](https://github.com/johelpadilla/systemictau/releases))
 - Plataforma educativa [Academy Learning Tau](https://academylearningtau.streamlit.app)

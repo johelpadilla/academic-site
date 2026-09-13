@@ -7,4 +7,4 @@ aliases:
   - /proyectos/
 ---
 
-Proyectos activos del programa **Systemic Tau (τ_s)**, **RECD**, **excess³** y aplicaciones en salud ambiental.
+Proyectos activos del programa **Systemic Tau (τ_s)**, **RECD**, **excess³**, la *Summa Tau Sistemica* y aplicaciones en salud ambiental.

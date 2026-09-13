@@ -20,7 +20,7 @@
 
 ```
 content/
-├── publications/    # 16+ peer-reviewed and preprint works (2026)
+├── publications/    # 23+ works (2026), including Summa Tau Sistemica I–IV
 ├── projects/        # Active research projects
 ├── teaching/        # Academic courses and materials
 └── slides/          # Presentation slides
@@ -83,5 +83,5 @@ Website content and materials are published under:
 
 ---
 
-**Last Updated**: 2026  
+**Last Updated**: 2026-08-14 (Summa I–IV + presentación v1.4)  
 **Framework**: HugoBlox v5.x | Hugo v0.x

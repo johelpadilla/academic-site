@@ -9,7 +9,7 @@ es:
   title: "Dr. Johel Padilla-Villanueva, DrPH"
   weight: 1
   params:
-    description: "Sitio académico de Dr. Johel Padilla-Villanueva, DrPH. Investigación sobre Systemic Tau (τ_s), RECD, Academy Learning Tau, excess³ y publicaciones abiertas en Zenodo."
+    description: "Sitio académico de Dr. Johel Padilla-Villanueva, DrPH. Investigación sobre Systemic Tau (τ_s), RECD, Summa Tau Sistemica, Academy Learning Tau, excess³ y publicaciones abiertas en Zenodo."
   menu:
     main:
       - name: Inicio
@@ -41,7 +41,7 @@ en:
   title: "Dr. Johel Padilla-Villanueva, DrPH"
   weight: 2
   params:
-    description: "Academic website of Dr. Johel Padilla-Villanueva, DrPH. Research on Systemic Tau (τ_s), RECD, Academy Learning Tau, excess³, and open monographs."
+    description: "Academic website of Dr. Johel Padilla-Villanueva, DrPH. Research on Systemic Tau (τ_s), RECD, Summa Tau Sistemica, Academy Learning Tau, excess³, and open monographs."
   menu:
     main:
       - name: Home

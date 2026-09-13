@@ -45,7 +45,7 @@ sections:
       text: |-
         Work centers on **Systemic Tau (τ_s)** and the **Discrete Extramental Clock (RECD)**: multivariate ordinal metrics, discrete extramental time, and higher-order dependence (**excess³ / Φ₃**), with applications to early warning (dengue) and open software.
 
-        In philosophy of physics, I continue Polo’s project with *El acto de ser relacional-discreto*. The program synthesis is *Systemic Tau and the Discrete Architecture of Time* (2nd ed., ISBN 979-8-18776-367-2).
+        The canonical architecture is the *Summa Tau Sistemica* (Tomes **I–IV** closed; **V** epidemiology in progress). In philosophy of physics, I continue Polo’s project with *El acto de ser relacional-discreto*. The program synthesis is *Systemic Tau and the Discrete Architecture of Time* (2nd ed., ISBN 979-8-18776-367-2).
 
         ### Quick links
         - [Author profile](/academic-site/authors/me/) · [Publications](/academic-site/publications/) · [Projects](/academic-site/project/)

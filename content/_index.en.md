@@ -15,7 +15,7 @@ sections:
             <p class="tau-hero-kicker">Open research · UPR</p>
             <h1 class="tau-hero-title">Systemic Tau (τ<sub>s</sub>) · RECD · excess³</h1>
             <p class="tau-hero-lede">
-              Ordinal frameworks for complex systems, discrete extramental time, and higher-order dependence — with open software and monographs.
+              Ordinal frameworks for complex systems, discrete extramental time, and higher-order dependence — with open software, monographs, and the <em>Summa Tau Sistemica</em> (Tomes I–IV).
             </p>
             <div class="tau-hero-actions">
               <a class="tau-btn tau-btn-primary" href="publications/">Publications</a>
@@ -46,14 +46,14 @@ sections:
       title: ''
       text: ''
       items:
-        - statistic: "20+"
+        - statistic: "23+"
           description: Publications and preprints
           icon: hero/document-text
         - statistic: "3"
           description: Open software products
           icon: hero/code-bracket
-        - statistic: "2"
-          description: Monographs (2026)
+        - statistic: "I–IV"
+          description: Summa tomes
           icon: hero/book-open
         - statistic: "ES · EN · FR"
           description: Multilingual pedagogy
@@ -78,7 +78,7 @@ sections:
           description: 'Pre-specified proxy for order-3 dependence, with nulls and synthetic validation.'
           icon: hero/cube-transparent
         - name: 'Applications and teaching'
-          description: 'Early warning (dengue), open software, and monographs in dialogue with philosophy of physics.'
+          description: 'Early warning (dengue), open software, Summa I–IV, and monographs in dialogue with philosophy of physics.'
           icon: hero/academic-cap
     design:
       layout: grid
@@ -101,7 +101,7 @@ sections:
     id: projects
     content:
       title: 'Projects'
-      text: 'Software, RECD, excess³, and dengue early warning.'
+      text: 'Software, RECD, excess³, Summa, and dengue early warning.'
       count: 6
       filters:
         folders:

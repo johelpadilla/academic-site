@@ -19,7 +19,7 @@ ids:
 bio: |
   Investigador independiente y profesor universitario en salud ambiental, dinámica de enfermedades vectoriales y marcos teóricos para sistemas complejos. Tesis DrPH (UPR, 2022): dinámica espaciotemporal de *Aedes aegypti* en el Caño Martín Peña, San Juan, Puerto Rico.
 
-  Programa actual: **Systemic Tau (τ_s)** y el **Reloj Extramental Discreto (RECD)** — métricas ordinales, tiempo discreto anidado, dependencia de orden superior (**excess³ / Φ₃**) y alerta temprana (dengue). Software: Academy Learning Tau y Systemic Tau. Monografías: *Systemic Tau and the Discrete Architecture of Time* (2.ª ed.) y *El acto de ser relacional-discreto* (Leonardo Polo).
+  Programa actual: **Systemic Tau (τ_s)** y el **Reloj Extramental Discreto (RECD)** — métricas ordinales, tiempo discreto anidado, dependencia de orden superior (**excess³ / Φ₃**) y alerta temprana (dengue). Arquitectura canónica: *Summa Tau Sistemica* (Tomos I–IV). Software: Academy Learning Tau y Systemic Tau. Monografías: *Systemic Tau and the Discrete Architecture of Time* (2.ª ed.) y *El acto de ser relacional-discreto* (Leonardo Polo).
 
 affiliations:
   - name: "Auxiliary Professor, University of Puerto Rico at Carolina"
@@ -51,6 +51,7 @@ links:
 
 interests:
   - "Systemic Tau (τ_s) and RECD"
+  - "Summa Tau Sistemica (canonical architecture)"
   - "Ordinal methods, renormalization, and complex systems"
   - "excess³ and higher-order dependence"
   - "Dengue early warning and environmental health"

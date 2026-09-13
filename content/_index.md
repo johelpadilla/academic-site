@@ -16,7 +16,7 @@ sections:
             <p class="tau-hero-kicker">Investigación abierta · UPR</p>
             <h1 class="tau-hero-title">Systemic Tau (τ<sub>s</sub>) · RECD · excess³</h1>
             <p class="tau-hero-lede">
-              Marcos ordinales para sistemas complejos, tiempo extramental discreto y dependencia de orden superior — con software abierto y monografías.
+              Marcos ordinales para sistemas complejos, tiempo extramental discreto y dependencia de orden superior — con software abierto, monografías y la <em>Summa Tau Sistemica</em> (Tomos I–IV).
             </p>
             <div class="tau-hero-actions">
               <a class="tau-btn tau-btn-primary" href="publications/">Publicaciones</a>
@@ -47,14 +47,14 @@ sections:
       title: ''
       text: ''
       items:
-        - statistic: "20+"
+        - statistic: "23+"
           description: Publicaciones y preprints
           icon: hero/document-text
         - statistic: "3"
           description: Software abierto
           icon: hero/code-bracket
-        - statistic: "2"
-          description: Monografías 2026
+        - statistic: "I–IV"
+          description: Tomos de la Summa
           icon: hero/book-open
         - statistic: "ES · EN · FR"
           description: Pedagogía multilingüe
@@ -79,7 +79,7 @@ sections:
           description: 'Proxy preespecificado de dependencia de orden 3, con nulos y validación sintética.'
           icon: hero/cube-transparent
         - name: 'Aplicaciones y docencia'
-          description: 'Alerta temprana (dengue), software abierto y monografías en diálogo con la física filosófica.'
+          description: 'Alerta temprana (dengue), software abierto, Summa I–IV y monografías en diálogo con la física filosófica.'
           icon: hero/academic-cap
     design:
       layout: grid
@@ -102,7 +102,7 @@ sections:
     id: projects
     content:
       title: 'Proyectos'
-      text: 'Software, RECD, excess³ y alerta temprana en dengue.'
+      text: 'Software, RECD, excess³, Summa y alerta temprana en dengue.'
       count: 6
       filters:
         folders:
