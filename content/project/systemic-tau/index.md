@@ -19,7 +19,7 @@ links:
 **Systemic Tau (τ_s)** es una medida ordinal multivariada de acoplamiento entre variables: rastrea coherencia relacional vía concordancias de rango (estilo Kendall), más allá de la amplitud univariada.
 
 ### Entregables
-- Marco teórico RECD / τ_s ([Zenodo 10.5281/zenodo.21287252](https://doi.org/10.5281/zenodo.21287252))
+- Marco teórico RECD / τ_s ([Zenodo 10.5281/zenodo.21287252](https://doi.org/10.5281/zenodo.21287252)) — *Chaos* (AIP) recomendó y reclasificó el manuscrito a *AIP Advances* (en consideración)
 - *Summa Tau Sistemica* (Tomos I–IV)
 - Monografía *Systemic Tau and the Discrete Architecture of Time* (2.ª ed.)
 - App de escritorio macOS **Systemic Tau** ([releases](https://github.com/johelpadilla/systemictau/releases))
