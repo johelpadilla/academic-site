@@ -47,7 +47,7 @@ sections:
       text: |-
         El trabajo se organiza en torno a **Systemic Tau (τ_s)** y el **Reloj Extramental Discreto (RECD)**: métricas ordinales multivariadas, tiempo extramental discreto y dependencia de orden superior (**excess³ / Φ₃**), con aplicaciones a alerta temprana (dengue) y software abierto.
 
-        El artículo de fundamentos fue enviado a *Chaos* (AIP). El editor lo recomendó y lo reclasificó a *AIP Advances*, donde está en consideración. La arquitectura canónica está en la *Summa Tau Sistemica* (Tomos **I–IV** cerrados; **V** epidemiología en curso). En filosofía de la física, continúo el proyecto poliano con *El acto de ser relacional-discreto*. La síntesis de programa está en *Systemic Tau and the Discrete Architecture of Time* (2.ª ed., ISBN 979-8-18776-367-2).
+        La arquitectura canónica está en la *Summa Tau Sistemica* (Tomos **I–IV** cerrados; **V** epidemiología en curso). En filosofía de la física, continúo el proyecto poliano con *El acto de ser relacional-discreto*. La síntesis de programa está en *Systemic Tau and the Discrete Architecture of Time* (2.ª ed., ISBN 979-8-18776-367-2).
 
         ### Enlaces rápidos
         - [Perfil de autor](/academic-site/authors/me/) · [Publicaciones](/academic-site/publications/) · [Proyectos](/academic-site/project/)

@@ -17,6 +17,6 @@ links:
 El **Reloj Extramental Discreto (RECD)** construye un tiempo intrínseco impulsado por eventos a partir de conjunciones ordinales anidadas: coincidencia, estructura persistente y superávit sinérgico irreducible (Φ₃ / excess³).
 
 ### Anclas del corpus
-- Framework: [10.5281/zenodo.21287252](https://doi.org/10.5281/zenodo.21287252) — *Chaos* recomendó y reclasificó a *AIP Advances* (en consideración)
+- Framework: [10.5281/zenodo.21287252](https://doi.org/10.5281/zenodo.21287252)
 - Φ₃ → RECD: [10.5281/zenodo.21400599](https://doi.org/10.5281/zenodo.21400599)
 - Dimensión fractal del tiempo extramental: [10.5281/zenodo.20619058](https://doi.org/10.5281/zenodo.20619058)
