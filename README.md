@@ -42,7 +42,7 @@ hugo server -D
 ## 📦 Software & Tools
 
 ### Academy Learning Tau (educational Streamlit platform)
-- 🌐 **Live**: [academylearningtau.streamlit.app](https://academylearningtau.streamlit.app)
+- 🌐 **Live**: [academy-learning-tau.streamlit.app](https://academy-learning-tau.streamlit.app)
 - 📦 **Repo**: [github.com/johelpadilla/academy-learning-tau](https://github.com/johelpadilla/academy-learning-tau)
 - 🔖 **DOI**: [10.5281/zenodo.21301571](https://doi.org/10.5281/zenodo.21301571) · v1.1.0
 
