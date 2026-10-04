@@ -2,7 +2,7 @@
 
 📊 Personal academic website showcasing research in complex systems theory and public health.
 
-**Live site**: [johelpadilla.com](https://github.com/johelpadilla/academic-site) *(Deploy URL)*
+**Live site**: [https://johelpadilla.github.io/academic-site/](https://johelpadilla.github.io/academic-site/) *(Deploy URL)*
 
 ## 🔬 Research Focus
 
