@@ -46,7 +46,7 @@ sections:
       title: ''
       text: ''
       items:
-        - statistic: "23+"
+        - statistic: "33"
           description: Publications and preprints
           icon: hero/document-text
         - statistic: "3"
@@ -88,7 +88,7 @@ sections:
     content:
       title: 'Featured publications'
       text: 'Cards with cover, DOI, and PDF. Full catalog at [Publications](publications/).'
-      count: 10
+      count: 12
       filters:
         folders:
           - publications

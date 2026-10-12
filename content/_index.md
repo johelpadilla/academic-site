@@ -47,7 +47,7 @@ sections:
       title: ''
       text: ''
       items:
-        - statistic: "23+"
+        - statistic: "33"
           description: Publicaciones y preprints
           icon: hero/document-text
         - statistic: "3"
@@ -89,7 +89,7 @@ sections:
     content:
       title: 'Publicaciones destacadas'
       text: 'Fichas con portada, DOI y PDF. Catálogo completo en [Publicaciones](publications/).'
-      count: 10
+      count: 12
       filters:
         folders:
           - publications
