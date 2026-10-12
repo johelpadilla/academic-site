@@ -8,7 +8,7 @@ publishDate: "2026-07-15T00:00:00Z"
 publication_types: ["book"]
 
 peer_reviewed: false
-open_access: true
+open_access: false
 
 publication:
   name: "Independently published"
@@ -16,14 +16,12 @@ publication:
   publisher: "Independently published"
 
 links:
-  - type: pdf
-    url: "uploads/publications/tau-sistemic-second-edition.pdf"
   - label: "Amazon"
     url: "https://www.amazon.com/dp/B0H9BJ34MG"
 
-abstract: "Scholarly monograph synthesizing the Systemic Tau / RECD research program (2022–2026), including post-June 2026 extensions: excess³ / Φ₃, clinical–philosophical continuations, three-layer ontology, ontological ascent, and nested ordinal depth. Second Edition, July 2026. ISBN 979-8-18776-367-2. Selected corpus anchors include excess³ (10.5281/zenodo.21385937), Φ₃–RECD (10.5281/zenodo.21400599), and the RECD framework (10.5281/zenodo.21287252)."
+abstract: "Scholarly monograph synthesizing the Systemic Tau / RECD research program (2022–2026), including post-June 2026 extensions: excess³ / Φ₃, clinical–philosophical continuations, three-layer ontology, ontological ascent, and nested ordinal depth. Second Edition, July 2026. ISBN 979-8-18776-367-2. Selected corpus anchors include excess³ (10.5281/zenodo.21385937), Φ₃–RECD (10.5281/zenodo.21400599), and the RECD framework (10.5281/zenodo.21287252). Print and Kindle are sold on Amazon; the full text is not a free download."
 
-summary: "Second Edition monograph: Systemic Tau and the Discrete Architecture of Time (ISBN 979-8-18776-367-2)."
+summary: "Second Edition monograph: Systemic Tau and the Discrete Architecture of Time (ISBN 979-8-18776-367-2). Print and Kindle on Amazon."
 
 tags:
 - Systemic Tau
@@ -43,12 +41,12 @@ featured: true
 - Bridges methods preprints, software, and philosophical continuations.
 - ISBN **979-8-18776-367-2**.
 - Print edition: *Systemic Tau and the Discrete Architecture of Time: A synthesis of the Systemic Tau paradigm, the Discrete Extramental Clock, the three-layer ontology, and ontological ascent* — Independently published, July 17, 2026 · 233 pp. · English · ISBN **979-8187754526** · [Amazon](https://www.amazon.com/dp/B0H9BJ34MG) (Kindle, hardcover, paperback).
+- En venta. No hay PDF gratuito en este sitio.
 
 ## Links
 
 | Resource | URL |
 |----------|-----|
-| PDF (site) | [tau-sistemic-second-edition.pdf](../../uploads/publications/tau-sistemic-second-edition.pdf) |
 | Amazon (Kindle, hardcover, paperback) | [amazon.com/dp/B0H9BJ34MG](https://www.amazon.com/dp/B0H9BJ34MG) |
 | Framework | [10.5281/zenodo.21287252](https://doi.org/10.5281/zenodo.21287252) |
 | excess³ | [10.5281/zenodo.21385937](https://doi.org/10.5281/zenodo.21385937) |
