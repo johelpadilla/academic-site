@@ -34,7 +34,7 @@ sections:
             </div>
           </div>
           <div class="tau-hero-photo">
-            <img src="/academic-site/media/authors/me.jpg" width="220" height="220" alt="Dr. Johel Padilla-Villanueva, DrPH" class="tau-hero-avatar" loading="eager" decoding="async">
+            <img src="/academic-site/media/authors/me.jpg?v=2" width="220" height="220" alt="Dr. Johel Padilla-Villanueva, DrPH" class="tau-hero-avatar" loading="eager" decoding="async">
             <p class="tau-hero-photo-caption">Dr. Johel Padilla-Villanueva, DrPH</p>
           </div>
         </div>
